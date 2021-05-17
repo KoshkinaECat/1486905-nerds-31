@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Екатерина Кошкина](https://up.htmlacademy.ru/htmlcss/31/user/1486905).
-* Наставник: `Неизвестно`.
+* Наставник: [Алексей Елькин](https://htmlacademy.ru/profile/alex_elkin).
 
 ---
 
