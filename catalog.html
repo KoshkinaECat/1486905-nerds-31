@@ -21,7 +21,7 @@
       <a href="blank.html">Корзина</a>
     </nav>
   </header>
-  <header></header>
+
   <main>
     <h1>Магазин готовых шаблонов</h1>
 
@@ -31,24 +31,24 @@
 
         <fieldset>
           <h3>СТОИМОСТЬ:</h3>
-          <p><meter min="0" max="15000" value="10000">10000</meter></p>
-          <label>от<input type="text" value="0"></label>
-          <label>до<input type="text" value="15000"></label>
+
+          <label>от<input type="number" value="0"></label>
+          <label>до<input type="number" value="15000"></label>
         </fieldset>
 
         <fieldset>
           <h3>Сетка</h3>
           <ul>
             <li>
-              <input type="radio" name="grid-product" value="grid" id="adaptive" checked>
+              <input type="radio" name="adaptive" value="grid" id="adaptive" checked>
               <label for="adaptive">Адаптивная</label>
             </li>
             <li>
-              <input type="radio" name="grid-product" value="grid" id="fixed">
+              <input type="radio" name="fixed" value="grid" id="fixed">
               <label for="fixed">Фиксированная</label>
             </li>
             <li>
-              <input type="radio" name="grid-product" value="grid" id="rubber">
+              <input type="radio" name="rubber" value="grid" id="rubber">
               <label for="rubber">Резиновая</label>
             </li>
           </ul>
@@ -85,16 +85,17 @@
         <button type="submit">Показать</button>
 
         <fieldset>
-          <h3>СОРТИРОВАТЬ:</h3>
+          <h3>Сортировать:</h3>
           <ul>
-            <li>ПО ЦЕНЕ</li>
-            <li>ПО ТИПУ</li>
-            <li>ПО НАЗВАНИЮ</li>
+            <li><a href="#">По цене</a></li>
+            <li><a hfef="#">По типу </a></li>
+            <li><a href="#">По названию</a></li>
           </ul>
         </fieldset>
 
+
+        <h2>Демонстрация товаров</h2>
         <fieldset>
-          <h2>Демонстрация товаров</h2>
           <a href="blank.html">
             <h3>Sedona</h3>
             <p>
@@ -104,42 +105,68 @@
           <p>
             <button type="button">9 900</button>
           </p>
+        </fieldset>
 
+        <fieldset>
           <a href="blank.html">
             <h3>Pink</h3>
             <p>
               <img src="https://via.placeholder.com/358x578" width="358" height="578" alt="Pink">
             </p>
           </a>
+          <p>
+            <button type="button">Цена</button>
+          </p>
+        </fieldset>
 
+        <fieldset>
           <a href="blank.html">
             <h3>Barbershop</h3>
             <p>
               <img src="https://via.placeholder.com/358x578" width="358" height="578" alt="Barbershop">
             </p>
           </a>
+          <p>
+            <button type="button">Цена</button>
+          </p>
+        </fieldset>
 
+        <fieldset>
           <a href="blank.html">
             <h3>Mishka</h3>
             <p>
               <img src="https://via.placeholder.com/359x578" width="359" height="578" alt="Mishka">
             </p>
           </a>
+          <p>
+            <button type="button">Цена</button>
+          </p>
+        </fieldset>
 
+        <fieldset>
           <a href="blank.html">
             <h3>Aplus</h3>
             <p>
               <img src="https://via.placeholder.com/359x578" width="359" height="578" alt="Aplus">
             </p>
           </a>
+          <p>
+            <button type="button">Цена</button>
+          </p>
+        </fieldset>
 
+        <fieldset>
           <a href="blank.html">
             <h3>Kvast</h3>
             <p>
               <img src="https://via.placeholder.com/359x578" width="359" height="578" alt="Kvast">
             </p>
           </a>
+          <p>
+            <button type="button">Цена</button>
+          </p>
         </fieldset>
+
         <ul>
           <li>
             <a>1</a>
@@ -164,9 +191,9 @@
       <h2>Контакты</h2>
       <p>
         NЁRDS DESIGN STUDIO<br>
-        наб. Реки Карповки, 5 лит П, Санкт-Петербург<br>
-        <a href="tel:+78005558628">+8 800 555-86-28</a><br>
-        <button type="button">НАПИШИТЕ НАМ</button>
+      <address>наб. Реки Карповки, 5 лит П, Санкт-Петербург</address><br>
+      <a href="tel:+78005558628">+8 800 555-86-28</a><br>
+      <button type="button">НАПИШИТЕ НАМ</button>
       </p>
       <a>
         <img src="https://via.placeholder.com/231x190" width="231" height="190" alt="Карта">
