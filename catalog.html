@@ -1,12 +1,224 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Нёрдс</title>
-  </head>
-  <body>
-<header></header>
-<main></main>
-<footer></footer>
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Нёрдс</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <a href="index.html">
+        <img src="https://via.placeholder.com/160x66" width="160" height="66" alt="Логотип Нёрдс">
+      </a>
+      <ul>
+        <li><a href="blank.html">Студия</a></li>
+        <li><a href="blank.html">Клиенты</a></li>
+        <li><a href="catalog.html">Магазин</a></li>
+        <li><a href="blank.html">Контакты</a></li>
+      </ul>
+      <a href="blank.html">Корзина</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Магазин готовых шаблонов</h1>
+
+    <section>
+      <h2>Фильтр товаров</h2>
+      <form method="get" action="https://echo.htmlacademy.ru">
+        <fieldset>
+          <h3>Стоимость:</h3>
+          <label>от<input type="number" value="0"></label>
+          <label>до<input type="number" value="15000"></label>
+        </fieldset>
+
+        <h3>Сетка:</h3>
+        <ul>
+          <li>
+            <input type="radio" name="adaptive" value="grid" id="adaptive" checked>
+            <label for="adaptive">Адаптивная</label>
+          </li>
+          <li>
+            <input type="radio" name="fixed" value="grid" id="fixed">
+            <label for="fixed">Фиксированная</label>
+          </li>
+          <li>
+            <input type="radio" name="rubber" value="grid" id="rubber">
+            <label for="rubber">Резиновая</label>
+          </li>
+        </ul>
+
+        <h3>Особенности:</h3>
+        <ul>
+          <li>
+            <input type="checkbox" name="features" id="slider" checked>
+            <label for="slider">Слайдер</label>
+          </li>
+
+          <li>
+            <input type="checkbox" name="features" id="block-of-advantages">
+            <label for="block-of-advantages">Блок преимуществ</label>
+          </li>
+
+          <li>
+            <input type="checkbox" name="features" id="news" checked>
+            <label for="news">Новости</label>
+          </li>
+
+          <li>
+            <input type="checkbox" name="features" id="galery">
+            <label for="galery">Галерея</label>
+          </li>
+
+          <li>
+            <input type="checkbox" name="features" id="basket">
+            <label for="basket">Корзина</label>
+          </li>
+        </ul>
+        <button type="submit">Показать</button>
+      </form>
+    </section>
+
+    <section>
+      <h3>Сортировать:</h3>
+      <ul>
+        <li><a href="#">По цене</a></li>
+        <li><a href="#">По типу </a></li>
+        <li><a href="#">По названию</a></li>
+      </ul>
+    </section>
+
+
+    <section>
+      <h2>Демонстрация товаров</h2>
+
+      <article>
+        <a href="blank.html">
+          <h3>Sedona</h3>
+          <p>
+            <img src="https://via.placeholder.com/359x578" width="359" height="578" alt="Sedona">
+          </p>
+        </a>
+        <p>
+          <button type="button">9 900</button>
+        </p>
+      </article>
+
+      <article>
+        <a href="blank.html">
+          <h3>Pink</h3>
+          <p>
+            <img src="https://via.placeholder.com/358x578" width="358" height="578" alt="Pink">
+          </p>
+        </a>
+        <p>
+          <button type="button">Цена</button>
+        </p>
+      </article>
+
+
+      <article>
+        <a href="blank.html">
+          <h3>Barbershop</h3>
+          <p>
+            <img src="https://via.placeholder.com/358x578" width="358" height="578" alt="Barbershop">
+          </p>
+        </a>
+        <p>
+          <button type="button">Цена</button>
+        </p>
+      </article>
+
+
+      <article>
+        <a href="blank.html">
+          <h3>Mishka</h3>
+          <p>
+            <img src="https://via.placeholder.com/359x578" width="359" height="578" alt="Mishka">
+          </p>
+        </a>
+        <p>
+          <button type="button">Цена</button>
+        </p>
+      </article>
+
+
+      <article>
+        <a href="blank.html">
+          <h3>Aplus</h3>
+          <p>
+            <img src="https://via.placeholder.com/359x578" width="359" height="578" alt="Aplus">
+          </p>
+        </a>
+        <p>
+          <button type="button">Цена</button>
+        </p>
+      </article>
+
+
+      <article>
+        <a href="blank.html">
+          <h3>Kvast</h3>
+          <p>
+            <img src="https://via.placeholder.com/359x578" width="359" height="578" alt="Kvast">
+          </p>
+        </a>
+        <p>
+          <button type="button">Цена</button>
+        </p>
+      </article>
+
+      <ul>
+        <li>
+          <a>1</a>
+        </li>
+        <li>
+          <a href="#">2</a>
+        </li>
+        <li>
+          <a href="#">3</a>
+        </li>
+        <li>
+          <a href="#">4</a>
+        </li>
+        <li>
+          <a href="#">СЛЕДУЮЩАЯ</a>
+        </li>
+      </ul>
+
+    </section>
+
+    <section>
+      <h2>Контакты</h2>
+      <p>
+        NЁRDS DESIGN STUDIO<br>
+      </p>
+      <address>наб. Реки Карповки, 5 лит П, Санкт-Петербург</address><br>
+      <a href="tel:+78005558628">+8 800 555-86-28</a><br>
+      <button type="button">НАПИШИТЕ НАМ</button>
+      <a>
+        <img src="https://via.placeholder.com/231x190" width="231" height="190" alt="Карта">
+      </a>
+    </section>
+  </main>
+
+  <footer>
+    <section>
+      <h2>Давайте дружить, это выгодно!</h2>
+      <p>Скидка 10% для друзей из социальных сетей.</p>
+      <ul>
+        <li>
+          <a href="#">Вконтакте</a>
+        </li>
+        <li>
+          <a href="#">Фейсбук</a>
+        </li>
+        <li>
+          <a href="#">Инстаграм</a>
+        </li>
+      </ul>
+    </section>
+  </footer>
 </body>
-</html>
