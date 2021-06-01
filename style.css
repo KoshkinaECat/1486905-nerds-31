@@ -1,0 +1,318 @@
+/* Variables */
+
+:root {
+--basic-black: #000000;
+--basic-white: #ffffff;
+--basic-gray: #a6a6a6;
+--basic-extra-dark: #283136;
+--basic-light-gray: #C1C1C1;
+--basic-very-light-gray: #EEEEEE;
+--basic-red: #FB565A;
+--basic-green: #00CA74;
+--basic-yellow: #EFC849;
+--basic-very-light-gray-2:#E1E1E1;
+--basic-very-dark-gray: #444444;
+--basic-very-dark-grey-2: #666666;
+}
+
+/* Global */
+
+body {
+    min-width: 1440px;
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: var(--basic-black);
+    background-color: var(--basic-white);
+  }
+
+  a {
+    text-decoration: none;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Main navigation */
+
+.main-navigation {
+  font-size: 16px;
+  line-height: 30px;
+  color: var(--basic-black);
+  background-color: var(--basic-very-light-gray);
+}
+
+.site-navigation {
+  list-style: none;
+}
+
+.site-navigation-current a:not([href]) {
+  background-color: var(--basic-black);
+}
+
+.site-navigation a
+{
+  color: var(--basic-black);
+}
+
+.site-navigation a:hover{
+  color: var(--basic-red);
+}
+
+.site-navigation a:focus{
+color:rgba(0, 0, 0, 1);
+}
+
+a svg:hover #logo1,
+a svg:hover #logo2 {
+fill:rgba(0, 0, 0, 0.7);
+}
+
+a svg:focus #logo1,
+a svg:focus #logo2 {
+fill: rgba(0, 0, 0, 0.3);
+}
+
+.slider{
+  background-color: var(--basic-very-light-gray);
+}
+
+.slider-content h3{
+font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+font-size: 55px;
+line-height: 55px;
+color: #000000;
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.slider-content p{
+width: 400px;
+height: 49px;
+left: 140px;
+top: 328px;
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 24px;
+color: var(--basic-extra-dark);
+}
+
+.button-slider{
+width: 240px;
+height: 50px;
+left: 140px;
+top: 415px;
+background: var(--basic-red);
+border-radius: 3px;
+font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 18px;
+color:var(--basic-white);
+text-transform: uppercase;
+}
+
+h2{
+  visibility: hidden;
+}
+
+.slider-controls {
+  bottom: 92px;
+  left: 536px;
+}
+
+.slider-controls button {
+  width: 18px;
+  height: 18px;
+  margin-right: 14px;
+  background-color: var(--basic-white);
+  border: none;
+  border-radius: 50%;
+}
+
+.services{
+  background-color: var(--basic-white);
+}
+
+.services-list{
+  list-style: none;
+}
+
+.services-item a{
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 24px;
+line-height: 30px;
+align-items: center;
+text-transform: uppercase;
+color:var(--basic-black);
+}
+
+.services-item p{
+width: 260px;
+height: 48px;
+left: 140px;
+top: 842px;
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 24px;
+align-items: center;
+color: var(--basic-extra-dark);
+}
+
+.button1{
+background: var(--basic-red);
+color: var(--basic-white);
+text-transform: uppercase;
+border-radius: 3px;
+}
+
+.button2{
+background: var(--basic-green);
+color: var(--basic-white);
+text-transform: uppercase;
+border-radius: 3px;
+}
+
+.button3{
+background: var(--basic-yellow);
+color: var(--basic-white);
+text-transform: uppercase;
+border-radius: 3px;
+}
+
+.slogan{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 45px;
+  line-height: 45px;
+  color:var(--basic-black);
+}
+
+.about-company p{
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 24px;
+color: var(--basic-extra-dark);
+}
+
+.benefits{
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 16px;
+line-height: 24px;
+text-transform: uppercase;
+color:var(--basic-extra-dark);
+}
+
+.benefits-list{
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 24px;
+color: var(--basic-extra-dark);
+}
+
+.about-company a{
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 16px;
+line-height: 24px;
+text-transform: uppercase;
+color: var(--basic-black);
+}
+
+.about-company-item{
+height: 64px;
+left: 65.28%;
+right: 29.31%;
+top: calc(50% - 64px/2 + 187px);
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 45px;
+line-height: 64px;
+color:var(--basic-black);
+}
+
+dd{
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 18px;
+color: var(--basic-extra-dark);
+}
+
+.contacts h3{
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 30px;
+align-items: center;
+text-transform: uppercase;
+color: var(--basic-black);
+}
+
+.address,
+.contacts-phone{
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 18px;
+align-items: center;
+color: var(--basic-very-dark-grey-2);
+}
+
+.button-contacts{
+background: var(--basic-red);
+border-radius: 3px;
+font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 18px;
+text-transform: uppercase;
+color: var(--basic-white)
+}
+
+.footer-social h3{
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 36px;
+line-height: 36px;
+color:var(--basic-black);
+}
+
+.footer-social p{
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 22px;
+color: var(--basic-very-dark-gray);
+}
+
+.social-list{
+  list-style: none;}
+
