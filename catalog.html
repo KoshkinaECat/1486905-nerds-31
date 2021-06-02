@@ -3,43 +3,48 @@
 
 <head>
   <meta charset="utf-8">
-  <title>HTML Academy: Нёрдс</title>
+  <title>Нёрдс</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link href="normalize.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="favicon/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="favicon/180.png">
   <link rel="manifest" href="manifest.webmanifest">
 </head>
 
-<body>
-  <header>
-    <nav>
-      <a href="index.html">
-        <img src="img/nerds-logo.svg" width="160" height="66" alt="Логотип Нёрдс">
-      </a>
-      <ul>
+<body class="page-body inner-page">
+  <header class="main-header">
+    <nav class="main-navigation">
+      <ul class="site-navigation">
+        <li><a class="logo-link" href="index.html">
+            <img src="img/nerds-logo.svg" width="160" height="66" alt="Логотип Нёрдс">
+          </a></li>
         <li><a href="blank.html">Студия</a></li>
         <li><a href="blank.html">Клиенты</a></li>
         <li><a href="catalog.html">Магазин</a></li>
         <li><a href="blank.html">Контакты</a></li>
+        <li><a href="blank.html">Корзина</a>
+          <img src="img/cart-icon.svg" width="15" height="15" alt="Корзина">
+        </li>
       </ul>
-      <a href="blank.html">Корзина</a>
     </nav>
+    <h1 class="header-shop">Магазин готовых шаблонов</h1>
   </header>
 
   <main>
-    <h1>Магазин готовых шаблонов</h1>
-
     <section>
       <h2>Фильтр товаров</h2>
       <form method="get" action="https://echo.htmlacademy.ru">
-        <fieldset>
-          <h3>Стоимость:</h3>
+        <fieldset class="breadcrumbs">
+          <h3 class="breadcrumbs-header">Стоимость:</h3>
           <label>от<input type="number" value="0"></label>
           <label>до<input type="number" value="15000"></label>
         </fieldset>
 
-        <h3>Сетка:</h3>
-        <ul>
+        <h3 class="breadcrumbs-header">Сетка:</h3>
+        <ul class="breadcrumbs">
           <li>
             <input type="radio" name="adaptive" value="grid" id="adaptive" checked>
             <label for="adaptive">Адаптивная</label>
@@ -54,8 +59,8 @@
           </li>
         </ul>
 
-        <h3>Особенности:</h3>
-        <ul>
+        <h3 class="breadcrumbs-header">Особенности:</h3>
+        <ul class="breadcrumbs">
           <li>
             <input type="checkbox" name="features" id="slider" checked>
             <label for="slider">Слайдер</label>
@@ -81,150 +86,145 @@
             <label for="basket">Корзина</label>
           </li>
         </ul>
-        <button type="submit">Показать</button>
+        <button class="button-sorting" type="submit">Показать</button>
       </form>
     </section>
 
     <section>
-      <h3>Сортировать:</h3>
-      <ul>
-        <li><a href="#">По цене</a></li>
-        <li><a href="#">По типу </a></li>
-        <li><a href="#">По названию</a></li>
+      <h3 class="breadcrumbs-header">Сортировать:</h3>
+      <ul class="breadcrumbs sorting">
+        <li><a class="sorting1" href="#">По цене</a></li>
+        <li><a class="sorting2" href="#">По типу </a></li>
+        <li><a class="sorting3" href="#">По названию</a></li>
       </ul>
     </section>
 
 
     <section>
       <h2>Демонстрация товаров</h2>
-
       <article>
         <a href="blank.html">
-          <h3>Sedona</h3>
-          <p>Информационный сайт для туристов</p>
+          <h3 class="header-demonstration">Sedona</h3>
+          <p class="text-demonstration"> Информационный сайт для туристов</p>
           <p>
             <img src="img/img-sedona.jpg" width="359" height="578" alt="Sedona">
           </p>
         </a>
         <p>
-          <button type="button">9 900 &#8381;</button>
+          <button class="button" type="button">9 900 &#8381;</button>
         </p>
       </article>
 
       <article>
         <a href="blank.html">
-          <h3>Pink App</h3>
-          <p>Продуктовый лендинг приложения для iOS и Anroid</p>
+          <h3 class="header-demonstration">Pink App</h3>
+          <p class="text-demonstration">Продуктовый лендинг приложения для iOS и Anroid</p>
           <p>
             <img src="img/img-pink.jpg" width="358" height="578" alt="Pink">
           </p>
         </a>
         <p>
-          <button type="button">9900 &#8381;</button>
+          <button class="button" type="button">9900 &#8381;</button>
         </p>
       </article>
 
 
       <article>
         <a href="blank.html">
-          <h3>Barbershop</h3>
-          <p>
-            <img src="img/img-barbershop.jpg" width="358" height="578" alt="Barbershop">
-          </p>
+          <h3 class="header-demonstration">Barbershop</h3>
+          <p class="text-demonstration">Сайт салона красоты. Для мужчин, да.</p>
+          <img src="img/img-barbershop.jpg" width="358" height="578" alt="Barbershop">
         </a>
         <p>
-          <button type="button">Цена</button>
+          <button class="button" type="button">9900 &#8381;</button>
         </p>
       </article>
 
 
       <article>
         <a href="blank.html">
-          <h3>Mishka</h3>
-          <p>
-            <img src="img/img-mishka.jpg" width="359" height="578" alt="Mishka">
-          </p>
+          <h3 class="header-demonstration">Mishka</h3>
+          <p class="text-demonstration">Интернет-магазин вязаных игрушек</p>
+          <img src="img/img-mishka.jpg" width="359" height="578" alt="Mishka">
         </a>
         <p>
-          <button type="button">Цена</button>
+          <button class="button" type="button">9900 &#8381;</button>
         </p>
       </article>
 
 
       <article>
         <a href="blank.html">
-          <h3>Aplus</h3>
-          <p>
-            <img src="img/img-aplus.jpg" width="359" height="578" alt="Aplus">
-          </p>
+          <h3 class="header-demonstration">Aplus</h3>
+          <p class="text-demonstration">Лендинг курсов повышения квалификации</p>
+          <img src="img/img-aplus.jpg" width="359" height="578" alt="Aplus">
         </a>
         <p>
-          <button type="button">Цена</button>
+          <button class="button" type="button">9900 &#8381;</button>
         </p>
       </article>
 
 
       <article>
         <a href="blank.html">
-          <h3>Kvast</h3>
-          <p>
-            <img src="img/img-kvast.jpg" width="359" height="578" alt="Kvast">
-          </p>
+          <h3 class="header-demonstration">Kvast</h3>
+          <p class="text-demonstration">Промо-сайт производителя крафтового кваса</p>
+          <img src="img/img-kvast.jpg" width="359" height="578" alt="Kvast">
         </a>
         <p>
-          <button type="button">Цена</button>
+          <button class="button" type="button">9900 &#8381;</button>
         </p>
       </article>
 
-      <ul>
+      <ul class="pagination">
         <li>
-          <a>1</a>
+          <button class="button-pagination current" type="button">1</button>
         </li>
         <li>
-          <a href="#">2</a>
+          <button class="button-pagination" type="button">2</button>
         </li>
         <li>
-          <a href="#">3</a>
+          <button class="button-pagination" type="button">3</button>
         </li>
         <li>
-          <a href="#">4</a>
+          <button class="button-pagination" type="button">4</button>
         </li>
         <li>
-          <a href="#">Следующая</a>
+          <button class="button-pagination next" type="button">Следующая</button>
         </li>
       </ul>
 
     </section>
 
-    <section>
+    <section class="contacts">
       <h2>Контакты</h2>
-      <p>
-        NЁRDS DESIGN STUDIO<br>
-      </p>
-      <address>наб. Реки Карповки, 5 лит П, Санкт-Петербург</address><br>
-      <a href="tel:+78005558628">+8 800 555-86-28</a><br>
-      <button type="button">НАПИШИТЕ НАМ</button>
+      <h3>NЁRDS DESIGN STUDIO</h3>
+      <p class="address">наб. Реки Карповки, 5 лит П, Санкт-Петербург</p>
+      <a class="contacts-phone" href="tel:+78005558628">+8 800 555-86-28</a><br>
+      <button class="button button-write" type="button">НАПИШИТЕ НАМ</button>
       <a>
-        <img src="img/сontacts.png" width="1440" height="416" alt="Контакты">
+        <img src="img/map.jpg" width="1440" height="416" alt="Контакты">
       </a>
     </section>
   </main>
 
-  <footer>
-    <section>
-      <h2>Давайте дружить, это выгодно!</h2>
+  <footer class="page-footer inner-footer">
+    <section class="footer-social">
+      <h3>Давайте дружить, это выгодно!</h3>
       <p>Скидка 10% для друзей из социальных сетей.</p>
-      <ul>
+      <ul class="social-list">
         <li>
-          <a href="#">Вконтакте</a>
+          <a class="social-button" href="#">Вконтакте</a>
         </li>
         <li>
-          <a href="#">Фейсбук</a>
+          <a class="social-button" href="#">Фейсбук</a>
         </li>
         <li>
-          <a href="#">Инстаграм</a>
+          <a class="social-button" href="#">Инстаграм</a>
         </li>
       </ul>
     </section>
   </footer>
 </body>
+
+</html>
