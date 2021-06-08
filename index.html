@@ -18,56 +18,56 @@
   <header class="main-header">
     <nav class="main-navigation">
       <ul class="site-navigation">
-        <li><a class="logo-link" href="index.html">
+        <li class="logo-link"><a href="index.html">
             <img src="img/nerds-logo.svg" width="160" height="66" alt="nerds-logo">
           </a></li>
         <li><a href="blank.html">Студия</a></li>
         <li><a href="blank.html">Клиенты</a></li>
         <li><a href="catalog.html">Магазин</a></li>
         <li><a href="blank.html">Контакты</a></li>
-        <li>
+        <li class="cart">
           <a href="blank.html">Корзина
             <img src="img/cart-icon.svg" width="15" height="15" alt="Корзина">
           </a>
         </li>
+
       </ul>
     </nav>
   </header>
 
   <main class="container">
-    <h2>Дизайн-студия Nёrds</h2>
+    <h2 class="visually-hidden">Дизайн-студия Nёrds</h2>
     <section class="slider">
-      <h2>Слайдер</h2>
+      <h2 class="visually-hidden">Слайдер</h2>
       <figure class="slider-title">
-        <h3>Долго, дорого, скурпулезно.</h3>
-        <p>Математически выверенный дизайн для вашего сайта или мобильного приложения</p>
-        <p><button class="button">Узнать больше</button></p>
-        <a href="#">
-          <img src="img/nerds-index-slide1.png" width="760" height="431" alt="Слайд 1">
-        </a>
+        <figcaption>
+          <h3>Долго, дорого, скурпулезно.</h3>
+          <p>Математически выверенный дизайн для вашего сайта или мобильного приложения</p>
+          <p><a href="#" class="button" type="button">Узнать больше</a></p>
+        </figcaption>
+        <img src="img/nerds-index-slide1.png" width="760" height="431" alt="Слайд 1">
       </figure>
 
       <figure class="slider-title">
-        <h3>Любим математику как никто другой</h3>
-        <p>Никакого креатива, только математические формулы для расчета идеальных пропорций</p>
-        <p><button class="button">Узнать больше</button></p>
-        <a href="#">
+        <figcaption>
+          <h3>Любим математику как никто другой</h3>
+          <p>Никакого креатива, только математические формулы для расчета идеальных пропорций</p>
+          <p><a href="#" class="button" type="button">Узнать больше</a></p>
           <img src="img/nerds-index-slide2.png" width="760" height="431" alt="Слайд 2">
-        </a>
       </figure>
 
       <figure class="slider-title">
-        <h3>Только ночь,
-          только хардкор</h3>
-        <p>Работать днем, как все? Мы против этого.
-          Ближе к полуночи работа только начинается.</p>
-        <p><button class="button">Узнать больше</button></p>
-        <a href="#">
-          <img src="img/nerds-index-slide3.png" width="760" height="431" alt="Слайд 3">
-        </a>
+        <figcaption>
+          <h3>Только ночь,
+            только хардкор</h3>
+          <p>Работать днем, как все? Мы против этого.
+            Ближе к полуночи работа только начинается.</p>
+          <p><a href="#" class="button" type="button">Узнать больше</a></p>
+        </figcaption>
+        <img src="img/nerds-index-slide3.png" width="760" height="431" alt="Слайд 3">
       </figure>
 
-      <h2>Переключатели</h2>
+      <h2 class="visually-hidden">Переключатели</h2>
       <div class="slider-controls">
         <button type="button" class="current"></button>
         <button type="button"></button>
@@ -76,7 +76,7 @@
     </section>
 
     <section class="services">
-      <h2>Услуги</h2>
+      <h2 class="visually-hidden">Услуги</h2>
       <ul class="services-list">
         <li class="services-item">
           <a>
@@ -102,40 +102,42 @@
         </li>
       </ul>
     </section>
-    <section class="about-company">
-      <h2>О компании</h2>
-      <h3 class="slogan">Мы — маленькая, но гордая дизайн-студия из Краснодара.</h3>
-      <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не
-        покладая рук, как роботы.</p>
+    <section class="about-company-section">
+      <div class="about-company">
+        <h3 class="slogan">Мы — маленькая, но гордая дизайн-студия из Краснодара.</h3>
+        <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не
+          покладая рук, как роботы.</p>
 
-      <h3 class="benefits">Выполняем заказы на разработку:</h3>
-      <ul class="benefits-list">
-        <li class="benefits-item">Веб-сайтов любой сложности</li>
-        <li class="benefits-item">Мобильных приложений для iOS и Android</li>
-        <li class="benefits-item">Слайдшоу и видео для корпоративных презентаций</li>
-      </ul>
 
-      <h2>Условия работы</h2>
-      <a>
-        <img src="img/nerds-illustration.jpg" width="360" height="208" alt="Иллюстрация о компании">с
-        2004
-        года любим точность во всем:
-      </a>
-      <dl class="about-company-list">
-        <dt class="about-company-item">146%</dt>
-        <dd class="about-company-definition">Уровень самоотдачи</dd>
+        <ul class="benefits-list">
+          <li class="benefits">Выполняем заказы на разработку:</li>
+          <li class="benefits-item">Веб-сайтов любой сложности</li>
+          <li class="benefits-item">Мобильных приложений для iOS и Android</li>
+          <li class="benefits-item">Слайдшоу и видео для корпоративных презентаций</li>
+        </ul>
+      </div>
+      <div class="working-conditions">
+        <h2 class="visually-hidden">Условия работы</h2>
+        <a class="nerds-illustration">
+          <img src="img/nerds-illustration.jpg" width="360" height="208" alt="Иллюстрация о компании">с
+          2004
+          года любим точность во всем:
+        </a>
+        <dl class="about-company-list">
+          <dt class="about-company-item">146%</dt>
+          <dd class="about-company-definition">Уровень самоотдачи</dd>
 
-        <dt class="about-company-item">100%</dt>
-        <dd class="about-company-definition">Соблюдение сроков</dd>
+          <dt class="about-company-item">100%</dt>
+          <dd class="about-company-definition">Соблюдение сроков</dd>
 
-        <dt class="about-company-item">50%</dt>
-        <dd class="about-company-definition">Минимальная предоплата</dd>
-      </dl>
+          <dt class="about-company-item">50%</dt>
+          <dd class="about-company-definition">Минимальная предоплата</dd>
+        </dl>
+      </div>
     </section>
 
-
-    <section>
-      <h2>Клиенты</h2>
+    <section class="clients-section">
+      <h2 class="visually-hidden">Клиенты</h2>
       <a class="clients">
         <img src="img/logo_htmlacademy.png" width="199" height="57" alt="Логотип htmlacademy">
       </a>
@@ -151,14 +153,18 @@
     </section>
 
     <section class="contacts">
-      <h2>Контакты</h2>
-      <h3>NЁRDS DESIGN STUDIO</h3>
-      <p class="address">наб. Реки Карповки, 5 лит П, Санкт-Петербург</p>
-      <a class="contacts-phone" href="tel:+78005558628">+8 800 555-86-28</a><br>
-      <button class="button button-write" type="button">НАПИШИТЕ НАМ</button>
-      <a>
-        <img src="img/map.jpg" width="1440" height="416" alt="Контакты">
-      </a>
+      <h2 class="visually-hidden">Контакты</h2>
+      <figure class="contacts-figure">
+        <figcaption>
+          <h3>NЁRDS DESIGN STUDIO</h3>
+          <p class="address">наб. Реки Карповки, 5 лит П, Санкт-Петербург</p>
+          <a class="contacts-phone" href="tel:+78005558628">+8 800 555-86-28</a><br>
+          <button class="button button-write" type="button">НАПИШИТЕ НАМ</button>
+        </figcaption>
+        <a>
+          <img src="img/map.jpg" width="1440" height="416" alt="Контакты">
+        </a>
+      </figure>
     </section>
   </main>
   <footer class="page-footer main-footer">
