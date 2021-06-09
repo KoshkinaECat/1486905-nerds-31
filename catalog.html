@@ -18,24 +18,26 @@
   <header class="main-header">
     <nav class="main-navigation">
       <ul class="site-navigation">
-        <li><a class="logo-link" href="index.html">
-            <img src="img/nerds-logo.svg" width="160" height="66" alt="Логотип Нёрдс">
+        <li class="logo-link"><a href="index.html">
+            <img src="img/nerds-logo.svg" width="160" height="66" alt="nerds-logo">
           </a></li>
         <li><a href="blank.html">Студия</a></li>
         <li><a href="blank.html">Клиенты</a></li>
         <li><a href="catalog.html">Магазин</a></li>
         <li><a href="blank.html">Контакты</a></li>
-        <li><a href="blank.html">Корзина</a>
-          <img src="img/cart-icon.svg" width="15" height="15" alt="Корзина">
+        <li class="cart">
+          <a href="blank.html">Корзина
+            <img src="img/cart-icon.svg" width="15" height="15" alt="Корзина">
+          </a>
         </li>
       </ul>
+      <h1 class="header-shop">Магазин готовых шаблонов</h1>
     </nav>
-    <h1 class="header-shop">Магазин готовых шаблонов</h1>
   </header>
 
-  <main>
+  <main class="page-catalog container">
     <section>
-      <h2>Фильтр товаров</h2>
+      <h2 class="visually-hidden">Фильтр товаров</h2>
       <form method="get" action="https://echo.htmlacademy.ru">
         <fieldset class="breadcrumbs">
           <h3 class="breadcrumbs-header">Стоимость:</h3>
@@ -86,13 +88,13 @@
             <label for="basket">Корзина</label>
           </li>
         </ul>
-        <a href=blank.html class="button button-sorting" type="submit">Показать</a>
+        <button class="button button-sorting" type="submit">Показать</button>
       </form>
     </section>
 
-    <section>
+    <section class="sorting">
       <h3 class="breadcrumbs-header">Сортировать:</h3>
-      <ul class="breadcrumbs sorting">
+      <ul class="breadcrumbs-sorting">
         <li><a class="sorting1" href="#">По цене</a></li>
         <li><a class="sorting2" href="#">По типу </a></li>
         <li><a class="sorting3" href="#">По названию</a></li>
@@ -100,9 +102,9 @@
     </section>
 
 
-    <section>
-      <h2>Демонстрация товаров</h2>
-      <article>
+    <section class="shop">
+      <h2 class="visually-hidden">Демонстрация товаров</h2>
+      <article class="product">
         <a href="blank.html">
           <h3 class="header-demonstration">Sedona</h3>
           <p class="text-demonstration"> Информационный сайт для туристов</p>
@@ -111,11 +113,11 @@
           </p>
         </a>
         <p>
-          <a href=blank.html class="button" type="button">9 900 &#8381;</a>
+          <button class="button" type="button">9 900 &#8381;</button>
         </p>
       </article>
 
-      <article>
+      <article class="product">
         <a href="blank.html">
           <h3 class="header-demonstration">Pink App</h3>
           <p class="text-demonstration">Продуктовый лендинг приложения для iOS и Anroid</p>
@@ -124,91 +126,96 @@
           </p>
         </a>
         <p>
-          <a href=blank.html class="button" type="button">9 900 &#8381;</a>
+          <button class="button" type="button">9 900 &#8381;</button>
         </p>
       </article>
 
 
-      <article>
+      <article class="product">
         <a href="blank.html">
           <h3 class="header-demonstration">Barbershop</h3>
           <p class="text-demonstration">Сайт салона красоты. Для мужчин, да.</p>
           <img src="img/img-barbershop.jpg" width="358" height="578" alt="Barbershop">
         </a>
         <p>
-          <a href=blank.html class="button" type="button">9 900 &#8381;</a>
+          <button class="button" type="button">9 900 &#8381;</button>
         </p>
       </article>
 
 
-      <article>
+      <article class="product">
         <a href="blank.html">
           <h3 class="header-demonstration">Mishka</h3>
           <p class="text-demonstration">Интернет-магазин вязаных игрушек</p>
           <img src="img/img-mishka.jpg" width="359" height="578" alt="Mishka">
         </a>
         <p>
-          <a href=blank.html class="button" type="button">9 900 &#8381;</a>
+          <button class="button" type="button">9 900 &#8381;</button>
         </p>
       </article>
 
 
-      <article>
+      <article class="product">
         <a href="blank.html">
           <h3 class="header-demonstration">Aplus</h3>
           <p class="text-demonstration">Лендинг курсов повышения квалификации</p>
           <img src="img/img-aplus.jpg" width="359" height="578" alt="Aplus">
         </a>
         <p>
-          <a href=blank.html class="button" type="button">9 900 &#8381;</a>
+          <button class="button" type="button">9 900 &#8381;</button>
         </p>
       </article>
 
 
-      <article>
+      <article class="product">
         <a href="blank.html">
           <h3 class="header-demonstration">Kvast</h3>
           <p class="text-demonstration">Промо-сайт производителя крафтового кваса</p>
           <img src="img/img-kvast.jpg" width="359" height="578" alt="Kvast">
         </a>
         <p>
-          <a href=blank.html class="button" type="button">9 900 &#8381;</a>
+          <button class="button" type="button">9 900 &#8381;</button>
         </p>
       </article>
 
       <ul class="pagination">
         <li>
-          <a href="blank.html" class="button-pagination current" type="button">1</a>
+          <a href="blank.html" class="button-pagination current">1</a>
         </li>
         <li>
-          <a href="blank.html" class="button-pagination" type="button">2</a>
+          <a href="blank.html" class="button-pagination">2</a>
         </li>
         <li>
-          <a href="blank.html" class="button-pagination" type="button">3</a>
+          <a href="blank.html" class="button-pagination">3</a>
         </li>
         <li>
-          <a href="blank.html" class="button-pagination" type="button">4</a>
+          <a href="blank.html" class="button-pagination">4</a>
         </li>
         <li>
-          <a href="blank.html" class="button-pagination next" type="button">Следующая</a>
+          <a href="blank.html" class="button-pagination next">Следующая</a>
         </li>
       </ul>
-
-    </section>
-
-    <section class="contacts">
-      <h2>Контакты</h2>
-      <h3>NЁRDS DESIGN STUDIO</h3>
-      <p class="address">наб. Реки Карповки, 5 лит П, Санкт-Петербург</p>
-      <a class="contacts-phone" href="tel:+78005558628">+8 800 555-86-28</a><br>
-      <a class="button button-write" type="button">НАПИШИТЕ НАМ</a>
-      <a>
-        <img src="img/map.jpg" width="1440" height="416" alt="Контакты">
-      </a>
     </section>
   </main>
 
-  <footer class="page-footer inner-footer">
+
+
+  <section class="contacts">
+    <h2 class="visually-hidden">Контакты</h2>
+    <figure class="contacts-figure">
+      <figcaption>
+        <h3>NЁRDS DESIGN STUDIO</h3>
+        <p class="address">наб. Реки Карповки, 5 лит П, Санкт-Петербург</p>
+        <a class="contacts-phone" href="tel:+78005558628">+8 800 555-86-28</a><br>
+        <button class="button button-write" type="button">НАПИШИТЕ НАМ</button>
+      </figcaption>
+      <a>
+        <img src="img/map.jpg" width="1440" height="416" alt="Контакты">
+      </a>
+    </figure>
+  </section>
+
+  <footer class="page-footer main-footer">
     <section class="footer-social">
       <h3>Давайте дружить, это выгодно!</h3>
       <p>Скидка 10% для друзей из социальных сетей.</p>
@@ -225,6 +232,27 @@
       </ul>
     </section>
   </footer>
+
+  <section class="popup">
+    <h3>Напишите нам</h3>
+    <p class="popup-item">
+      <label for="popup-name">Ваше имя:</label>
+      <input id="popup-name" type="text" name="name" placeholder="Имя Фамилия">
+    </p>
+    <p class="popup-item">
+      <label for="popup-email">Ваш email:</label>
+      <input id="popup-email" type="email" name="email" placeholder="email@example.com">
+    </p>
+    <p class="popup-item">
+      <a>
+        <img src="img/vector.svg" width="21" height="21" alt="Закрыть">
+      </a>
+      <label for="popup-letter">Текст письма:</label>
+      <input id="popup-letter" type="text" name="letter" placeholder="В свободной форме">
+    </p>
+    <button class="button" type="submit">Отправить</button>
+  </section>
+
 </body>
 
 </html>
