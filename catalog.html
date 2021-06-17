@@ -36,14 +36,22 @@
   </header>
 
   <main class="page-catalog container">
-    <section>
+    <section class="sorting">
+      <h3 class="breadcrumbs-header">Сортировать:</h3>
+      <ul class="breadcrumbs-sorting">
+        <li><a class="sorting-link sorting-link--active" href="#">По цене</a></li>
+        <li><a class="sorting-link" href="#">По типу </a></li>
+        <li><a class="sorting-link" href="#">По названию</a></li>
+      </ul>
+    </section>
+    <section class="breadcrumbs">
       <h2 class="visually-hidden">Фильтр товаров</h2>
       <form method="get" action="https://echo.htmlacademy.ru">
-        <fieldset class="breadcrumbs">
-          <h3 class="breadcrumbs-header">Стоимость:</h3>
-          <label>от<input type="number" value="0"></label>
-          <label>до<input type="number" value="15000"></label>
-        </fieldset>
+
+        <h3 class="breadcrumbs-header">Стоимость:</h3>
+        <label>от<input type="number" value="0"></label>
+        <label>до<input type="number" value="15000"></label>
+
 
         <h3 class="breadcrumbs-header">Сетка:</h3>
         <ul class="breadcrumbs">
@@ -92,16 +100,6 @@
       </form>
     </section>
 
-    <section class="sorting">
-      <h3 class="breadcrumbs-header">Сортировать:</h3>
-      <ul class="breadcrumbs-sorting">
-        <li><a class="sorting-link sorting-link--active" href="#">По цене</a></li>
-        <li><a class="sorting-link" href="#">По типу </a></li>
-        <li><a class="sorting-link" href="#">По названию</a></li>
-      </ul>
-    </section>
-
-
     <section class="shop">
       <h2 class="visually-hidden">Демонстрация товаров</h2>
       <article class="product">
@@ -109,7 +107,7 @@
           <h3 class="header-demonstration">Sedona</h3>
           <p class="text-demonstration"> Информационный сайт для туристов</p>
           <p>
-            <img src="img/img-sedona.jpg" width="359" height="578" alt="Sedona">
+            <img class="img-product" src="img/img-sedona.jpg" width="359" height="578" alt="Sedona">
           </p>
         </a>
         <p>
@@ -162,7 +160,7 @@
           <img src="img/img-aplus.jpg" width="359" height="578" alt="Aplus">
         </a>
         <p>
-          <button class="button" type="button">9 900 &#8381;</button>
+          <button class="button button-product" type="button">9 900 &#8381;</button>
         </p>
       </article>
 
@@ -201,17 +199,16 @@
   <section class="contacts">
     <h2 class="visually-hidden">Контакты</h2>
     <figure class="contacts-figure">
-      <figcaption>
+      <figcaption class="contacts-figcaption">
         <h3>NЁRDS DESIGN STUDIO</h3>
         <p class="address">наб. Реки Карповки, 5 лит П, Санкт-Петербург</p>
         <a class="contacts-phone" href="tel:+78005558628">+8 800 555-86-28</a><br>
         <button class="button button-write" type="button">НАПИШИТЕ НАМ</button>
       </figcaption>
+      <a class="map">
+        <img src="img/map.jpg" width="1440" height="416" alt="Контакты">
+      </a>
     </figure>
-    <a>
-      <img src="img/map.jpg" width="1440" height="416" alt="Контакты">
-    </a>
-
   </section>
 
   <footer class="page-footer main-footer">
