@@ -37,24 +37,24 @@
 
   <main class="page-catalog container">
     <section class="sorting">
-      <h3 class="breadcrumbs-header">Сортировать:</h3>
-      <ul class="breadcrumbs-sorting">
+      <h3 class="sorting-header">Сортировать:</h3>
+      <ul class="sorting-list">
         <li><a class="sorting-link sorting-link--active" href="#">По цене</a></li>
         <li><a class="sorting-link" href="#">По типу </a></li>
         <li><a class="sorting-link" href="#">По названию</a></li>
       </ul>
     </section>
-    <section class="breadcrumbs">
+    <section class="filters">
       <h2 class="visually-hidden">Фильтр товаров</h2>
       <form method="get" action="https://echo.htmlacademy.ru">
 
-        <h3 class="breadcrumbs-header">Стоимость:</h3>
+        <h3 class="filters-header">Стоимость:</h3>
         <label>от<input type="number" value="0"></label>
         <label>до<input type="number" value="15000"></label>
 
 
-        <h3 class="breadcrumbs-header">Сетка:</h3>
-        <ul class="breadcrumbs">
+        <h3 class="filters-header">Сетка:</h3>
+        <ul class="filters">
           <li>
             <input type="radio" name="adaptive" value="grid" id="adaptive" checked>
             <label for="adaptive">Адаптивная</label>
@@ -69,8 +69,8 @@
           </li>
         </ul>
 
-        <h3 class="breadcrumbs-header">Особенности:</h3>
-        <ul class="breadcrumbs">
+        <h3 class="filters-header">Особенности:</h3>
+        <ul class="filters">
           <li>
             <input type="checkbox" name="features" id="slider" checked>
             <label for="slider">Слайдер</label>
