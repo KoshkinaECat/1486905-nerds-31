@@ -25,13 +25,11 @@
         <li class="navigation"><a href="blank.html">Клиенты</a></li>
         <li class="navigation"><a href="catalog.html">Магазин</a></li>
         <li class="navigation"><a href="blank.html">Контакты</a></li>
-        <li class="cart">
-          <a href="blank.html">Корзина
-            <img src="img/cart-icon.svg" width="15" height="15" alt="Корзина">
-          </a>
-        </li>
-
       </ul>
+      <div class="cart">
+        <a class="cart-img" href="blank.html">Корзина
+        </a>
+      </div>
     </nav>
   </header>
 
@@ -39,7 +37,7 @@
     <h2 class="visually-hidden">Дизайн-студия Nёrds</h2>
     <section class="slider">
       <h2 class="visually-hidden">Слайдер</h2>
-      <figure class="slider-title">
+      <figure class="slide">
         <figcaption>
           <h3>Долго, дорого, скурпулезно.</h3>
           <p>Математически выверенный дизайн для вашего сайта или мобильного приложения</p>
@@ -48,7 +46,7 @@
         <img src="img/nerds-index-slide1.png" width="760" height="431" alt="Слайд 1">
       </figure>
 
-      <figure class="slider-title">
+      <figure class="slide visually-hidden">
         <figcaption>
           <h3>Любим математику как никто другой</h3>
           <p>Никакого креатива, только математические формулы для расчета идеальных пропорций</p>
@@ -57,7 +55,7 @@
         </figcaption>
       </figure>
 
-      <figure class="slider-title">
+      <figure class="slide visually-hidden">
         <figcaption>
           <h3>Только ночь,
             только хардкор</h3>
@@ -80,24 +78,27 @@
       <h2 class="visually-hidden">Услуги</h2>
       <ul class="services-list">
         <li class="services-item">
-          <a>
-            <img src="img/illustration-1.png" width="300" height="146" alt="Иллюстрация к веб-сайтам">ВЕБ-САЙТЫ
+          <a class="services-img">
+            <img src="img/illustration-1.png" width="300" height="146" alt="Иллюстрация к веб-сайтам">
           </a>
+          <h3>ВЕБ-САЙТЫ</h3>
           <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
           <button class="button services-button1" type="button">ЗАКАЗАТЬ</button>
         </li>
 
         <li class="services-item">
-          <a>
-            <img src="img/illustration-2.png" width="300" height="146" alt="Иллюстрация к приложениям">ПРИЛОЖЕНИЯ
+          <a class="services-img">
+            <img src="img/illustration-2.png" width="300" height="146" alt="Иллюстрация к приложениям">
           </a>
+          <h3>ПРИЛОЖЕНИЯ</h3>
           <p>Покорите топ-10 приложений в AppStore и Google Play</p>
           <button class="button services-button2" type="button">ЗАКАЗАТЬ</button>
         </li>
         <li class="services-item">
-          <a>
-            <img src="img/illustration-3.png" width="300" height="146" alt="Иллюстрация к презентациям">ПРЕЗЕНТАЦИИ
+          <a class="services-img">
+            <img src="img/illustration-3.png" width="300" height="146" alt="Иллюстрация к презентациям">
           </a>
+          <h3>ПРЕЗЕНТАЦИИ</h3>
           <p>Вы даже не подозреваете, насколько вы изумительны!</p>
           <button class="button services-button3" type="button">ЗАКАЗАТЬ</button>
         </li>
@@ -108,8 +109,6 @@
         <h3 class="slogan">Мы — маленькая, но гордая дизайн-студия из Краснодара.</h3>
         <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не
           покладая рук, как роботы.</p>
-
-
         <ul class="benefits-list">
           <li class="benefits">Выполняем заказы на разработку:</li>
           <li class="benefits-item">Веб-сайтов любой сложности</li>
@@ -120,8 +119,9 @@
       <div class="working-conditions">
         <h2 class="visually-hidden">Условия работы</h2>
         <img class="nerds-illustration" src="img/nerds-illustration.jpg" width="360" height="208" alt="Иллюстрация о
-        компании">с 2004 года любим
-        точность во всем:
+        компании">
+        <h3 class="working-conditions-header">с 2004 года любим
+          точность во всем:</h3>
         <dl class="about-company-list">
           <dt class="about-company-item">146%</dt>
           <dd class="about-company-definition">Уровень самоотдачи</dd>
@@ -137,16 +137,16 @@
 
     <section class="clients-section">
       <h2 class="visually-hidden">Клиенты</h2>
-      <a class="clients">
+      <a class="clients clients-html">
         <img src="img/logo_htmlacademy.png" width="199" height="57" alt="Логотип htmlacademy">
       </a>
-      <a class="clients">
+      <a class="clients clients-borodimskiy">
         <img src="img/logo-2.png" width="209" height="90" alt="Логотип Бородинский">
       </a>
-      <a class="clients">
+      <a class="clients clients-pink">
         <img src="img/logo-3.png" width="185" height="52" alt="Логотип Pink">
       </a>
-      <a class="clients">
+      <a class="clients clients-mishka">
         <img src="img/logo-4.png" width="173" height="84" alt="Логотип Mishka">
       </a>
     </section>
@@ -171,16 +171,22 @@
 
       <ul class="social-list">
         <li>
-          <a class="social-button" href="#">Вконтакте</a>
+          <a class="social-button" href="#">
+            <img src="img/vk.svg" width="81" height="81" alt="vk-logo">
+          </a>
         </li>
         <li>
-          <a class="social-button" href="#">Фейсбук</a>
+          <a class="social-button" href="#">
+            <img src="img/facebook.svg" width="81" height="81" alt="facebook-logo">
+          </a>
         </li>
         <li>
-          <a class="social-button" href="#">Инстаграм</a>
+          <a class="social-button" href="#">
+            <img src="img/insta.svg" width="81" height="81" alt="insta-logo">
+          </a>
         </li>
       </ul>
-      <h3>Давайте дружить, это выгодно!</h3><br>
+      <h3>Давайте дружить, это выгодно!</h3>
       <p>Скидка 10% для друзей из социальных сетей.</p>
     </section>
   </footer>
