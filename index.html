@@ -16,7 +16,7 @@
 
 <body class="page-body">
   <header class="main-header">
-    <nav class="main-navigation">
+    <nav class="main-navigation container">
       <ul class="site-navigation">
         <li class="logo-link"><a href="index.html">
             <img src="img/nerds-logo.svg" width="160" height="66" alt="nerds-logo">
@@ -25,17 +25,18 @@
         <li class="navigation"><a href="blank.html">Клиенты</a></li>
         <li class="navigation"><a href="catalog.html">Магазин</a></li>
         <li class="navigation"><a href="blank.html">Контакты</a></li>
+        <li class="cart">
+          <a href="blank.html"><img src="img/cart-icon.svg" width="15" height="15" alt="Корзина">
+            Корзина
+          </a>
+        </li>
       </ul>
-      <div class="cart">
-        <a class="cart-img" href="blank.html">Корзина
-        </a>
-      </div>
     </nav>
   </header>
 
-  <main class="container">
+  <main>
     <h2 class="visually-hidden">Дизайн-студия Nёrds</h2>
-    <section class="slider">
+    <section class="slider container">
       <h2 class="visually-hidden">Слайдер</h2>
       <figure class="slide">
         <figcaption>
@@ -43,10 +44,10 @@
           <p>Математически выверенный дизайн для вашего сайта или мобильного приложения</p>
           <p><button class="button" type="button">Узнать больше</button></p>
         </figcaption>
-        <img src="img/nerds-index-slide1.png" width="760" height="431" alt="Слайд 1">
+        <img class="nerds-slide-img" src="img/nerds-index-slide1.png" width="760" height="431" alt="Слайд 1">
       </figure>
 
-      <figure class="slide visually-hidden">
+      <figure class="slide visually-hidden container">
         <figcaption>
           <h3>Любим математику как никто другой</h3>
           <p>Никакого креатива, только математические формулы для расчета идеальных пропорций</p>
@@ -55,7 +56,7 @@
         </figcaption>
       </figure>
 
-      <figure class="slide visually-hidden">
+      <figure class="slide visually-hidden container">
         <figcaption>
           <h3>Только ночь,
             только хардкор</h3>
@@ -74,7 +75,7 @@
       </div>
     </section>
 
-    <section class="services">
+    <section class="services container">
       <h2 class="visually-hidden">Услуги</h2>
       <ul class="services-list">
         <li class="services-item">
@@ -104,13 +105,14 @@
         </li>
       </ul>
     </section>
-    <section class="about-company-section">
+    <section class="about-company-section container">
       <div class="about-company">
         <h3 class="slogan">Мы — маленькая, но гордая дизайн-студия из Краснодара.</h3>
         <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не
           покладая рук, как роботы.</p>
+
+        <p class="benefits">Выполняем заказы на разработку:</p>
         <ul class="benefits-list">
-          <li class="benefits">Выполняем заказы на разработку:</li>
           <li class="benefits-item">Веб-сайтов любой сложности</li>
           <li class="benefits-item">Мобильных приложений для iOS и Android</li>
           <li class="benefits-item">Слайдшоу и видео для корпоративных презентаций</li>
@@ -123,19 +125,19 @@
         <h3 class="working-conditions-header">с 2004 года любим
           точность во всем:</h3>
         <dl class="about-company-list">
-          <dt class="about-company-item">146%</dt>
+          <dt class="about-company-item">146<span class="about-company-span">%</span></dt>
           <dd class="about-company-definition">Уровень самоотдачи</dd>
 
-          <dt class="about-company-item">100%</dt>
+          <dt class="about-company-item">100<span class="about-company-span">%</span></dt>
           <dd class="about-company-definition">Соблюдение сроков</dd>
 
-          <dt class="about-company-item">50%</dt>
+          <dt class="about-company-item">50<span class="about-company-span">%</span></dt>
           <dd class="about-company-definition">Минимальная предоплата</dd>
         </dl>
       </div>
     </section>
 
-    <section class="clients-section">
+    <section class="clients-section container">
       <h2 class="visually-hidden">Клиенты</h2>
       <a class="clients clients-html">
         <img src="img/logo_htmlacademy.png" width="199" height="57" alt="Логотип htmlacademy">
@@ -151,7 +153,7 @@
       </a>
     </section>
 
-    <section class="contacts">
+    <section class="contacts container">
       <h2 class="visually-hidden">Контакты</h2>
       <figure class="contacts-figure">
         <figcaption class="contacts-figcaption">
@@ -161,13 +163,13 @@
           <button class="button button-write" type="button">НАПИШИТЕ НАМ</button>
         </figcaption>
         <a class="map">
-          <img src="img/map.jpg" width="1440" height="416" alt="Контакты">
+          <img class="map-img" src="img/map.jpg" width="1440" height="416" alt="Контакты">
         </a>
       </figure>
     </section>
   </main>
   <footer class="page-footer main-footer">
-    <section class="footer-social">
+    <section class="footer-social container">
 
       <ul class="social-list">
         <li>
@@ -191,7 +193,7 @@
     </section>
   </footer>
 
-  <section class="popup">
+  <section class="popup visually-hidden">
     <h3>Напишите нам</h3>
     <p class="popup-item">
       <label for="popup-name">Ваше имя:</label>
