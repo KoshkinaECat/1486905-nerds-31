@@ -69,46 +69,47 @@
           </div>
         </fieldset>
         <h3 class="filters-header">Сетка:</h3>
-        <ul class="filters radio">
+        <ul class="filters-list radio">
           <li>
-            <input class="visually-hidden filter-input-radio" type="radio" name="adaptive" value="grid" id="adaptive"
+            <input class="visually-hidden filter-input-radio" type="radio" value="adaptive" name="grid" id="adaptive"
               checked>
             <label for="adaptive">Адаптивная</label>
           </li>
           <li>
-            <input class="visually-hidden filter-input-radio" type="radio" name="fixed" value="grid" id="fixed">
+            <input class="visually-hidden filter-input-radio" type="radio" value="fixed" name="grid" id="fixed">
             <label for="fixed">Фиксированная</label>
           </li>
           <li>
-            <input class="visually-hidden filter-input-radio" type="radio" name="rubber" value="grid" id="rubber">
+            <input class="visually-hidden filter-input-radio" type="radio" value="rubber" name="grid" id="rubber">
             <label for="rubber">Резиновая</label>
           </li>
         </ul>
 
         <h3 class="filters-header">Особенности:</h3>
-        <ul class="filters">
+        <ul class="filters-list">
           <li>
-            <input class="input-checkbox visually-hidden" type="checkbox" name="features" id="slider" checked>
+            <input class="input-checkbox visually-hidden" type="checkbox" name="slider" id="slider" checked>
             <label for="slider">Слайдер</label>
           </li>
 
           <li>
-            <input class="input-checkbox visually-hidden" type="checkbox" name="features" id="block-of-advantages">
+            <input class="input-checkbox visually-hidden" type="checkbox" name="block-of-advantages"
+              id="block-of-advantages">
             <label for="block-of-advantages">Блок преимуществ</label>
           </li>
 
           <li>
-            <input class="input-checkbox visually-hidden" type="checkbox" name="features" id="news" checked>
+            <input class="input-checkbox visually-hidden" type="checkbox" name="news" id="news" checked>
             <label for="news">Новости</label>
           </li>
 
           <li>
-            <input class="input-checkbox visually-hidden" type="checkbox" name="features" id="galery">
+            <input class="input-checkbox visually-hidden" type="checkbox" name="galery" id="galery">
             <label for="galery">Галерея</label>
           </li>
 
           <li>
-            <input class="input-checkbox visually-hidden" type="checkbox" name="features" id="basket">
+            <input class="input-checkbox visually-hidden" type="checkbox" name="basket" id="basket">
             <label for="basket">Корзина</label>
           </li>
         </ul>
@@ -119,82 +120,93 @@
     <section class="shop">
       <h2 class="visually-hidden">Демонстрация товаров</h2>
       <article class="product">
-        <a href="blank.html">
-          <h3 class="header-demonstration">Sedona</h3>
+        <div class="product-details">
+          <a href="blank.html">
+            <h3 class="header-demonstration">Sedona</h3>
+          </a>
           <p class="text-demonstration"> Информационный сайт для туристов</p>
-          <p>
-            <img class="img-product" src="img/img-sedona.jpg" width="359" height="578" alt="Sedona">
-          </p>
-        </a>
-        <p>
           <button class="button" type="button">9 900 &#8381;</button>
-        </p>
+        </div>
+        <a href="blank.html" class="product-link">
+
+          <img class="img-product" src="img/img-sedona.jpg" width="359" height="578" alt="Sedona">
+
+        </a>
+
       </article>
 
       <article class="product">
-        <a href="blank.html">
-          <h3 class="header-demonstration">Pink App</h3>
+        <div class="product-details">
+          <a href="blank.html">
+            <h3 class="header-demonstration">Pink App</h3>
+          </a>
           <p class="text-demonstration">Продуктовый лендинг приложения для iOS и Anroid</p>
-          <p>
-            <img src="img/img-pink.jpg" width="358" height="578" alt="Pink">
-          </p>
-        </a>
-        <p>
           <button class="button" type="button">9 900 &#8381;</button>
-        </p>
+        </div>
+        <a href="blank.html" class="product-link">
+          <img src="img/img-pink.jpg" width="358" height="578" alt="Pink">
+        </a>
       </article>
 
 
       <article class="product">
-        <a href="blank.html">
-          <h3 class="header-demonstration">Barbershop</h3>
+        <div class="product-details">
+          <a href="blank.html">
+            <h3 class="header-demonstration">Barbershop</h3>
+          </a>
           <p class="text-demonstration">Сайт салона красоты. Для мужчин, да.</p>
+          <button class="button" type="button">9 900 &#8381;</button>
+        </div>
+        <a href="blank.html">
           <img src="img/img-barbershop.jpg" width="358" height="578" alt="Barbershop">
         </a>
-        <p>
-          <button class="button" type="button">9 900 &#8381;</button>
-        </p>
       </article>
 
 
       <article class="product">
-        <a href="blank.html">
-          <h3 class="header-demonstration">Mishka</h3>
+        <div class="product-details">
+          <a href="blank.html">
+            <h3 class="header-demonstration">Mishka</h3>
+          </a>
           <p class="text-demonstration">Интернет-магазин вязаных игрушек</p>
+          <button class="button" type="button">9 900 &#8381;</button>
+        </div>
+        <a href="blank.html">
           <img src="img/img-mishka.jpg" width="359" height="578" alt="Mishka">
         </a>
-        <p>
-          <button class="button" type="button">9 900 &#8381;</button>
-        </p>
       </article>
 
 
       <article class="product">
-        <a href="blank.html">
-          <h3 class="header-demonstration">Aplus</h3>
+        <div class="product-details">
+          <a href="blank.html">
+            <h3 class="header-demonstration">Aplus</h3>
+          </a>
           <p class="text-demonstration">Лендинг курсов повышения квалификации</p>
+          <button class="button" type="button">9 900 &#8381;</button>
+        </div>
+        <a href="blank.html">
           <img src="img/img-aplus.jpg" width="359" height="578" alt="Aplus">
         </a>
-        <p>
-          <button class="button button-product" type="button">9 900 &#8381;</button>
-        </p>
       </article>
 
 
       <article class="product">
-        <a href="blank.html">
-          <h3 class="header-demonstration">Kvast</h3>
+        <div class="product-details">
+          <a href="blank.html">
+            <h3 class="header-demonstration">Kvast</h3>
+          </a>
           <p class="text-demonstration">Промо-сайт производителя крафтового кваса</p>
+          <button class="button" type="button">9 900 &#8381;</button>
+        </div>
+        <a href="blank.html">
           <img src="img/img-kvast.jpg" width="359" height="578" alt="Kvast">
         </a>
-        <p>
-          <button class="button" type="button">9 900 &#8381;</button>
-        </p>
       </article>
 
       <ul class="pagination">
         <li>
-          <a href="blank.html" class="button-pagination current">1</a>
+          <a href="blank.html" class="button-pagination pagination-current">1</a>
         </li>
         <li>
           <a href="blank.html" class="button-pagination">2</a>
@@ -223,7 +235,6 @@
       </a>
     </figure>
   </section>
-  </main>
   <footer class="page-footer main-footer">
     <section class="footer-social container">
 
