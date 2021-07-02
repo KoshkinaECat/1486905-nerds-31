@@ -16,7 +16,7 @@
 
 <body class="page-body inner-page">
   <header class="main-header">
-    <nav class="main-navigation container">
+    <nav class="main-navigation">
       <ul class="site-navigation">
         <li class="logo-link"><a href="index.html">
             <img src="img/nerds-logo.svg" width="160" height="66" alt="nerds-logo">
@@ -26,12 +26,9 @@
         <li class="navigation"><a href="catalog.html">Магазин</a></li>
         <li class="navigation"><a href="blank.html">Контакты</a></li>
         <li class="cart">
-          <a href="blank.html"><img src="img/cart-icon.svg" width="15" height="15" alt="Корзина">
-            Корзина
-          </a>
+          <a href="blank.html">Корзина</a>
         </li>
       </ul>
-      <h1 class="header-shop">Магазин готовых шаблонов</h1>
     </nav>
   </header>
 
@@ -72,45 +69,47 @@
           </div>
         </fieldset>
         <h3 class="filters-header">Сетка:</h3>
-        <ul class="filters">
+        <ul class="filters-list radio">
           <li>
-            <input class="visually-hidden" type="radio" name="adaptive" value="grid" id="adaptive" checked>
+            <input class="visually-hidden filter-input-radio" type="radio" value="adaptive" name="grid" id="adaptive"
+              checked>
             <label for="adaptive">Адаптивная</label>
           </li>
           <li>
-            <input class="visually-hidden" type="radio" name="fixed" value="grid" id="fixed">
+            <input class="visually-hidden filter-input-radio" type="radio" value="fixed" name="grid" id="fixed">
             <label for="fixed">Фиксированная</label>
           </li>
           <li>
-            <input class="visually-hidden" type="radio" name="rubber" value="grid" id="rubber">
+            <input class="visually-hidden filter-input-radio" type="radio" value="rubber" name="grid" id="rubber">
             <label for="rubber">Резиновая</label>
           </li>
         </ul>
 
         <h3 class="filters-header">Особенности:</h3>
-        <ul class="filters">
+        <ul class="filters-list">
           <li>
-            <input class="visually-hidden" type="checkbox" name="features" id="slider" checked>
+            <input class="input-checkbox visually-hidden" type="checkbox" name="slider" id="slider" checked>
             <label for="slider">Слайдер</label>
           </li>
 
           <li>
-            <input class="visually-hidden" type="checkbox" name="features" id="block-of-advantages">
+            <input class="input-checkbox visually-hidden" type="checkbox" name="block-of-advantages"
+              id="block-of-advantages">
             <label for="block-of-advantages">Блок преимуществ</label>
           </li>
 
           <li>
-            <input class="visually-hidden" type="checkbox" name="features" id="news" checked>
+            <input class="input-checkbox visually-hidden" type="checkbox" name="news" id="news" checked>
             <label for="news">Новости</label>
           </li>
 
           <li>
-            <input class="visually-hidden" type="checkbox" name="features" id="galery">
+            <input class="input-checkbox visually-hidden" type="checkbox" name="galery" id="galery">
             <label for="galery">Галерея</label>
           </li>
 
           <li>
-            <input class="visually-hidden" type="checkbox" name="features" id="basket">
+            <input class="input-checkbox visually-hidden" type="checkbox" name="basket" id="basket">
             <label for="basket">Корзина</label>
           </li>
         </ul>
@@ -121,82 +120,93 @@
     <section class="shop">
       <h2 class="visually-hidden">Демонстрация товаров</h2>
       <article class="product">
-        <a href="blank.html">
-          <h3 class="header-demonstration">Sedona</h3>
+        <div class="product-details">
+          <a href="blank.html">
+            <h3 class="header-demonstration">Sedona</h3>
+          </a>
           <p class="text-demonstration"> Информационный сайт для туристов</p>
-          <p>
-            <img class="img-product" src="img/img-sedona.jpg" width="359" height="578" alt="Sedona">
-          </p>
-        </a>
-        <p>
           <button class="button" type="button">9 900 &#8381;</button>
-        </p>
+        </div>
+        <a href="blank.html" class="product-link">
+
+          <img class="img-product" src="img/img-sedona.jpg" width="359" height="578" alt="Sedona">
+
+        </a>
+
       </article>
 
       <article class="product">
-        <a href="blank.html">
-          <h3 class="header-demonstration">Pink App</h3>
+        <div class="product-details">
+          <a href="blank.html">
+            <h3 class="header-demonstration">Pink App</h3>
+          </a>
           <p class="text-demonstration">Продуктовый лендинг приложения для iOS и Anroid</p>
-          <p>
-            <img src="img/img-pink.jpg" width="358" height="578" alt="Pink">
-          </p>
-        </a>
-        <p>
           <button class="button" type="button">9 900 &#8381;</button>
-        </p>
+        </div>
+        <a href="blank.html" class="product-link">
+          <img src="img/img-pink.jpg" width="358" height="578" alt="Pink">
+        </a>
       </article>
 
 
       <article class="product">
-        <a href="blank.html">
-          <h3 class="header-demonstration">Barbershop</h3>
+        <div class="product-details">
+          <a href="blank.html">
+            <h3 class="header-demonstration">Barbershop</h3>
+          </a>
           <p class="text-demonstration">Сайт салона красоты. Для мужчин, да.</p>
+          <button class="button" type="button">9 900 &#8381;</button>
+        </div>
+        <a href="blank.html">
           <img src="img/img-barbershop.jpg" width="358" height="578" alt="Barbershop">
         </a>
-        <p>
-          <button class="button" type="button">9 900 &#8381;</button>
-        </p>
       </article>
 
 
       <article class="product">
-        <a href="blank.html">
-          <h3 class="header-demonstration">Mishka</h3>
+        <div class="product-details">
+          <a href="blank.html">
+            <h3 class="header-demonstration">Mishka</h3>
+          </a>
           <p class="text-demonstration">Интернет-магазин вязаных игрушек</p>
+          <button class="button" type="button">9 900 &#8381;</button>
+        </div>
+        <a href="blank.html">
           <img src="img/img-mishka.jpg" width="359" height="578" alt="Mishka">
         </a>
-        <p>
-          <button class="button" type="button">9 900 &#8381;</button>
-        </p>
       </article>
 
 
       <article class="product">
-        <a href="blank.html">
-          <h3 class="header-demonstration">Aplus</h3>
+        <div class="product-details">
+          <a href="blank.html">
+            <h3 class="header-demonstration">Aplus</h3>
+          </a>
           <p class="text-demonstration">Лендинг курсов повышения квалификации</p>
+          <button class="button" type="button">9 900 &#8381;</button>
+        </div>
+        <a href="blank.html">
           <img src="img/img-aplus.jpg" width="359" height="578" alt="Aplus">
         </a>
-        <p>
-          <button class="button button-product" type="button">9 900 &#8381;</button>
-        </p>
       </article>
 
 
       <article class="product">
-        <a href="blank.html">
-          <h3 class="header-demonstration">Kvast</h3>
+        <div class="product-details">
+          <a href="blank.html">
+            <h3 class="header-demonstration">Kvast</h3>
+          </a>
           <p class="text-demonstration">Промо-сайт производителя крафтового кваса</p>
+          <button class="button" type="button">9 900 &#8381;</button>
+        </div>
+        <a href="blank.html">
           <img src="img/img-kvast.jpg" width="359" height="578" alt="Kvast">
         </a>
-        <p>
-          <button class="button" type="button">9 900 &#8381;</button>
-        </p>
       </article>
 
       <ul class="pagination">
         <li>
-          <a href="blank.html" class="button-pagination current">1</a>
+          <a href="blank.html" class="button-pagination pagination-current">1</a>
         </li>
         <li>
           <a href="blank.html" class="button-pagination">2</a>
@@ -217,17 +227,16 @@
       <figcaption class="contacts-figcaption">
         <h3>NЁRDS DESIGN STUDIO</h3>
         <p class="address">наб. Реки Карповки, 5 лит П, Санкт-Петербург</p>
-        <a class="contacts-phone" href="tel:+78005558628">+8 800 555-86-28</a><br>
+        <a class="contacts-phone" href="tel:+78005558628">+7 800 555-86-28</a><br>
         <button class="button button-write" type="button">НАПИШИТЕ НАМ</button>
       </figcaption>
       <a class="map">
-        <img src="img/map.jpg" width="1440" height="416" alt="Контакты">
+        <img class="map-img" src="img/map.png" width="1440" height="416" alt="Контакты">
       </a>
     </figure>
   </section>
-
   <footer class="page-footer main-footer">
-    <section class="footer-social">
+    <section class="footer-social container">
 
       <ul class="social-list">
         <li>
@@ -250,27 +259,6 @@
       <p>Скидка 10% для друзей из социальных сетей.</p>
     </section>
   </footer>
-
-  <section class="popup">
-    <h3>Напишите нам</h3>
-    <p class="popup-item">
-      <label for="popup-name">Ваше имя:</label>
-      <input id="popup-name" type="text" name="name" placeholder="Имя Фамилия">
-    </p>
-    <p class="popup-item">
-      <label for="popup-email">Ваш email:</label>
-      <input id="popup-email" type="email" name="email" placeholder="email@example.com">
-    </p>
-    <p class="popup-item">
-      <a>
-        <img src="img/vector.svg" width="21" height="21" alt="Закрыть">
-      </a>
-      <label for="popup-letter">Текст письма:</label>
-      <input id="popup-letter" type="text" name="letter" placeholder="В свободной форме">
-    </p>
-    <button class="button" type="submit">Отправить</button>
-  </section>
-
 </body>
 
 </html>
