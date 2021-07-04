@@ -138,18 +138,21 @@
     <section class="clients-section container">
       <h2 class="visually-hidden">Клиенты</h2>
       <a class="clients clients-html">
-        <img src="img/logo_htmlacademy.png" width="199" height="57" alt="Логотип htmlacademy">
+        <img class="img-clients" src="img/htmlacademy.svg" width="199" height="57" alt="Логотип htmlacademy">
       </a>
       <a class="clients clients-borodimskiy">
-        <img src="img/logo-2.png" width="209" height="90" alt="Логотип Бородинский">
+        <img class="img-clients" src="img/borodinskiy.svg" width="209" height="90" alt="Логотип Бородинский">
       </a>
       <a class="clients clients-pink">
-        <img src="img/logo-3.png" width="185" height="52" alt="Логотип Pink">
+        <img class="img-clients" src="img/pink.svg" width="185" height="52" alt="Логотип Pink">
       </a>
       <a class="clients clients-mishka">
-        <img src="img/logo-4.png" width="173" height="84" alt="Логотип Mishka">
+        <img class="img-clients" src="img/mishka.svg" width="173" height="84" alt="Логотип Mishka">
       </a>
     </section>
+
+
+
 
     <section class="contacts">
       <h2 class="visually-hidden">Контакты</h2>
@@ -165,6 +168,25 @@
         </a>
       </figure>
     </section>
+    <section class="popup active">
+      <h3 class="popup-h">Напишите нам</h3>
+      <p class="popup-item">
+        <label for="popup-name">Ваше имя:</label>
+        <input class="popup-name" id="popup-name" type="text" name="name" placeholder="Имя Фамилия">
+      </p>
+      <p class="popup-item">
+        <label for="popup-email">Ваш email:</label>
+        <input class="popup-name" id="popup-email" type="email" name="email" placeholder="email@example.com">
+      </p>
+      <p class="popup-item">
+        <a href="index.html">
+          <img class="popup-close" src="img/close-cross.png" width="21" height="21" aria-label="Закрыть">
+        </a>
+        <label for="popup-letter">Текст письма:</label>
+        <input class="popup-letter" id="popup-letter" type="text" name="letter" placeholder="В свободной форме">
+      </p>
+      <button class="button popup-button" type="submit">Отправить</button>
+    </section>
   </main>
   <footer class="page-footer main-footer">
     <section class="footer-social container">
@@ -172,17 +194,17 @@
       <ul class="social-list">
         <li>
           <a class="social-button" href="#">
-            <img src="img/vk.svg" width="81" height="81" alt="vk-logo">
+            <img class="social-logo" src="img/vk.png" width="81" height="81" alt="vk-logo">
           </a>
         </li>
         <li>
           <a class="social-button" href="#">
-            <img src="img/facebook.svg" width="81" height="81" alt="facebook-logo">
+            <img class="social-logo" src="img/facebook.png" width="81" height="81" alt="facebook-logo">
           </a>
         </li>
         <li>
           <a class="social-button" href="#">
-            <img src="img/insta.svg" width="81" height="81" alt="insta-logo">
+            <img class="social-logo" src="img/insta.png" width="81" height="81" alt="insta-logo">
           </a>
         </li>
       </ul>
@@ -190,27 +212,6 @@
       <p>Скидка 10% для друзей из социальных сетей.</p>
     </section>
   </footer>
-
-  <section class="popup active visually-hidden">
-    <h3>Напишите нам</h3>
-    <p class="popup-item">
-      <label for="popup-name">Ваше имя:</label>
-      <input id="popup-name" type="text" name="name" placeholder="Имя Фамилия">
-    </p>
-    <p class="popup-item">
-      <label for="popup-email">Ваш email:</label>
-      <input id="popup-email" type="email" name="email" placeholder="email@example.com">
-    </p>
-    <p class="popup-item">
-      <a>
-        <img src="img/vector.svg" width="21" height="21" alt="Закрыть">
-      </a>
-      <label for="popup-letter">Текст письма:</label>
-      <input id="popup-letter" type="text" name="letter" placeholder="В свободной форме">
-    </p>
-    <button class="button" type="submit">Отправить</button>
-  </section>
-
 </body>
 
 </html>

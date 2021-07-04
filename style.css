@@ -60,7 +60,6 @@
   margin: 0 auto;
   width: 100%;
   display: flex;
-  padding-top: 75px;
 }
 
 .container {
@@ -91,16 +90,21 @@ width: 1175px;
   color: var(--basic-black);
   display: block;
   padding:0 22px;
+
 }
+
 .site-navigation a:hover{
   color:var(--basic-red2);
 }
+
 
 .site-navigation a:active,
 .site-navigation a:focus{
 color: var(--basic-black);
 opacity: 0.3;
 }
+
+
 
 .site-navigation:last-child{
   margin-right: 0;
@@ -234,7 +238,7 @@ background:var(--basic-red2)
 .button:focus,
 .button:active{
 background: var(--basic-red3);
-color: rgba(255, 255, 255, 1);
+color: rgba(255, 255, 255, 3);
 }
 
 .visually-hidden{
@@ -498,20 +502,18 @@ width: 25px;
 height: 2px;
 transform: translateY(-50%);
 background-color:rgba(251, 86, 90, 1);
+}
 
-
-  }
-
-  .working-conditions-header{
-font-weight: bold;
-font-size: 16px;
-line-height: 24px;
-display: flex;
-align-items: center;
-text-align: center;
-text-transform: uppercase;
-padding-bottom: 31px;
-  }
+.working-conditions-header{
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  padding-bottom: 31px;
+}
 
 
 .about-company a{
@@ -572,13 +574,28 @@ margin: 0;
   background-repeat: no-repeat;
 }
 
+.img-clients{
+  opacity: 0.2;
+
+}
+
+.img-clients:hover{
+  opacity: 1;
+}
+
+.img-clients:active,
+.img-clients:focus{
+  opacity: 0.1;
+}
+
+
 .clients-html{
 width: 199px;
 height: 57px;
 background-image: url("img/rectangle2.png");
 background-repeat: no-repeat;
 background-position: right,0 0;
-padding-right:48px ;
+
 }
 
 .clients-borodimskiy{
@@ -587,7 +604,7 @@ padding-right:48px ;
   background-image: url("img/rectangle2.png");
   background-repeat: no-repeat;
   background-position: right,0 0;
-  padding-right:44px ;
+
 }
 
 .clients-pink{
@@ -596,7 +613,6 @@ padding-right:48px ;
   background-image: url("img/rectangle2.png");
   background-repeat: no-repeat;
   background-position: right,0 0;
-  padding-right:44px ;
 }
 /* Конец блока с клиентами компании*/
 
@@ -691,9 +707,9 @@ margin:0 auto;}
 
 .footer-social{
 display:flex;
-flex-direction: column;
 min-width: 1175px;
 height: 81px;
+justify-content: space-between;
 }
 
 .footer-social h3{
@@ -702,9 +718,7 @@ font-weight: bold;
 font-size: 36px;
 line-height: 36px;
 color:var(--basic-black);
-padding-left: 540px;
-padding-bottom: 10px;
-margin-top: 68px;
+margin-top: 18px;
 }
 
 .footer-social p{
@@ -713,18 +727,108 @@ font-weight: normal;
 font-size: 16px;
 line-height: 22px;
 color: var(--basic-very-dark-gray);
-padding-left: 540px;
+margin: 0;
 }
 
 .social-list{
 display: flex;
 list-style: none;
 justify-content: start;
-padding-left:140px;
-margin-top: 68px;
+padding-left: 0;
+min-width: 400px;
+margin: 0;
 }
 
+.social-logo{}
 
+.social-logo:hover{}
+
+
+.social-logo:active,
+.social-logo:focus{}
+
+
+/*Popup*/
+.popup{
+  display:flex;
+  flex-wrap: wrap;
+  width: 960px;
+  height: auto;
+  background-color: var(--basic-white);
+  padding:100px 100px;
+  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
+  top: 0px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  position: relative;
+}
+
+.popup-close{
+  position: absolute;
+  top: 78px;
+  right: 90px;
+  width: 21px;
+  height: 21px;
+  border: 0;
+  cursor: pointer;
+  opacity: 0.3;
+}
+
+.popup-close:hover{
+  opacity: 1;
+}
+
+.popup-close:active,
+.popup-close:focus{
+  opacity: 0.1;
+}
+
+.popup-name{
+  width: 360px;
+  height: 50px;
+  border: 2px solid rgba(215, 220, 222, 1);
+}
+
+.popup-name:hover{
+  border: 2px solid rgba(180, 185, 187, 1);
+}
+
+.popup-name:active,
+.popup-name:focus{
+  border: 2px solid rgba(0, 0, 0, 1);
+}
+
+.popup-h{
+height: 53px;
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 45px;
+line-height: 53px;
+color: #000000;
+}
+
+.popup-letter{
+  width: 760px;
+  height: 118px;
+  border: 2px solid rgba(215, 220, 222, 1);
+}
+
+.popup-letter:hover{
+  border: 2px solid rgba(180, 185, 187, 1);
+}
+
+.popup-letter:active,
+.popup-letter:hover{
+  border: 2px solid rgba(0, 0, 0, 1);
+}
+
+.popup-button{
+  width: 259px;
+  height: 50px;
+}
 
 /* Inner header */
 .inner-page .main-header {
@@ -767,7 +871,6 @@ align-items: center;
  gap: 40px;
  grid-column: 2/-1;
  grid-row: 2/3;
- padding-top: 133px;
 }
 
 .product{
@@ -804,6 +907,7 @@ align-items: center;
 .product:hover{
   box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.25);
   background-color: #4D4D4D;
+  transition: all 0.4s;
 }
 
 .product-details{
@@ -822,6 +926,7 @@ align-items: center;
 
 .product:hover .product-details{
   transform: translateY(0);
+  transition: all 0.4s;
 }
 
 .filters {
@@ -856,8 +961,8 @@ align-items: center;
 .input-checkbox:checked + label::after {
   content: "";
   position: absolute;
-  width: 21px;
-  height: 17px;
+  width: 29px;
+  height: 23px;
   left:0px;
   background-image: url("img/checkbox-on.png");
   background-repeat: no-repeat;
@@ -900,7 +1005,6 @@ align-items: center;
 .filter-input-radio + label:hover:after,
 .filter-input-radio + label:hover:before{
   opacity: 1;
-
 }
 
 
@@ -932,6 +1036,7 @@ align-items: center;
   height: 41px;
   margin-bottom: 5px;
   padding-top: 39px;
+  padding-bottom: 39px;
   padding-right: 20px;
   padding-left: 20px;
   background-color: #f1f1f1;
@@ -1004,7 +1109,6 @@ font-size: 18px;
 line-height: 30px;
 text-transform: uppercase;
 color: var(--basic-black);
-padding-top: 55px;
 }
 
 .sorting-list{
@@ -1048,28 +1152,6 @@ opacity: .3;
 position: relative;
 }
 
-.sorting-list::after{
-  content: "";
-  position: absolute;
-  right:-18px;
-  top:197px;
-  width: 11px;
-  height: 10px;
-  background-image: url("img/icon-up-dir.png");
-  background-repeat: no-repeat;
-}
-
-.sorting-list::before{
-  content: "";
-  position: absolute;
-  right:0px;
-  top:197px;
-  width: 11px;
-  height: 10px;
-  background-image: url("img/icon-down-dir.png");
-  background-repeat: no-repeat;
-}
-
 .sorting-link--active{
   opacity: 1;
 }
@@ -1089,6 +1171,15 @@ text-transform: uppercase;
   line-height: 30px;
   text-transform: uppercase;
   color:var(--basic-black);
+}
+
+.header-demonstration:hover{
+  color:var(--basic-red);
+}
+
+.header-demonstration:active,
+.header-demonstration:focus{
+  opacity: 0.3;
 }
 
 .text-demonstration{
