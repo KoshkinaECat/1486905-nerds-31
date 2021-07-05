@@ -16,7 +16,7 @@
 
 <body class="page-body">
   <header class="main-header">
-    <nav class="main-navigation">
+    <nav class="main-navigation container">
       <ul class="site-navigation">
         <li class="logo-link"><a href="index.html">
             <img src="img/nerds-logo.svg" width="160" height="66" alt="nerds-logo">
@@ -33,45 +33,50 @@
   </header>
 
   <main>
+
     <h2 class="visually-hidden">Дизайн-студия Nёrds</h2>
-    <section class="slider">
-      <h2 class="visually-hidden">Слайдер</h2>
-      <figure class="slide">
-        <figcaption>
-          <h3>Долго, дорого, скурпулезно.</h3>
-          <p>Математически выверенный дизайн для вашего сайта или мобильного приложения</p>
-          <p><button class="button" type="button">Узнать больше</button></p>
-        </figcaption>
-        <img class="nerds-slide-img" src="img/nerds-index-slide1.png" width="760" height="431" alt="Слайд 1">
-      </figure>
+    <div style="background-color:#EEEEEE;">
+      <section class="slider container">
+        <h2 class="visually-hidden">Слайдер</h2>
+        <figure class="slide">
+          <figcaption>
+            <h3>Долго, дорого, скурпулезно.</h3>
+            <p>Математически выверенный дизайн для вашего сайта или мобильного приложения</p>
+            <p><button class="button" type="button">Узнать больше</button></p>
+          </figcaption>
+          <img class="nerds-slide-img" src="img/nerds-index-slide1.png" width="760" height="431" alt="Слайд 1">
+        </figure>
 
-      <figure class="slide visually-hidden container">
-        <figcaption>
-          <h3>Любим математику как никто другой</h3>
-          <p>Никакого креатива, только математические формулы для расчета идеальных пропорций</p>
-          <p><button class="button" type="button">Узнать больше</button></p>
-          <img src="img/nerds-index-slide2.png" width="760" height="431" alt="Слайд 2">
-        </figcaption>
-      </figure>
+        <figure class="slide visually-hidden container">
+          <figcaption>
+            <h3>Любим математику как никто другой</h3>
+            <p>Никакого креатива, только математические формулы для расчета идеальных пропорций</p>
+            <p><button class="button" type="button">Узнать больше</button></p>
+            <img src="img/nerds-index-slide2.png" width="760" height="431" alt="Слайд 2">
+          </figcaption>
+        </figure>
 
-      <figure class="slide visually-hidden container">
-        <figcaption>
-          <h3>Только ночь,
-            только хардкор</h3>
-          <p>Работать днем, как все? Мы против этого.
-            Ближе к полуночи работа только начинается.</p>
-          <p><button class="button" type="button">Узнать больше</button></p>
-        </figcaption>
-        <img src="img/nerds-index-slide3.png" width="760" height="431" alt="Слайд 3">
-      </figure>
+        <figure class="slide visually-hidden container">
+          <figcaption>
+            <h3>Только ночь,
+              только хардкор</h3>
+            <p>Работать днем, как все? Мы против этого.
+              Ближе к полуночи работа только начинается.</p>
+            <p><button class="button" type="button">Узнать больше</button></p>
+          </figcaption>
+          <img src="img/nerds-index-slide3.png" width="760" height="431" alt="Слайд 3">
+        </figure>
 
-      <h2 class="visually-hidden">Переключатели</h2>
-      <div class="slider-controls">
-        <button type="button" class="current"></button>
-        <button type="button"></button>
-        <button type="button"></button>
-      </div>
-    </section>
+
+        <h2 class="visually-hidden">Переключатели</h2>
+        <div class="slider-controls">
+          <button type="button" class="current"></button>
+          <button type="button"></button>
+          <button type="button"></button>
+        </div>
+      </section>
+    </div>
+
 
     <section class="services container">
       <h2 class="visually-hidden">Услуги</h2>
@@ -160,7 +165,7 @@
         <figcaption class="contacts-figcaption">
           <h3>NЁRDS DESIGN STUDIO</h3>
           <p class="address">наб. Реки Карповки, 5 лит П, Санкт-Петербург</p>
-          <a class="contacts-phone" href="tel:+78005558628">+7 800 555-86-28</a><br>
+          <a class="contacts-phone" href="tel:+78005558628">+7 800 555-86-28</a>
           <button class="button button-write" type="button">НАПИШИТЕ НАМ</button>
         </figcaption>
         <a class="map">
@@ -168,43 +173,25 @@
         </a>
       </figure>
     </section>
-    <section class="popup active">
-      <h3 class="popup-h">Напишите нам</h3>
-      <p class="popup-item">
-        <label for="popup-name">Ваше имя:</label>
-        <input class="popup-name" id="popup-name" type="text" name="name" placeholder="Имя Фамилия">
-      </p>
-      <p class="popup-item">
-        <label for="popup-email">Ваш email:</label>
-        <input class="popup-name" id="popup-email" type="email" name="email" placeholder="email@example.com">
-      </p>
-      <p class="popup-item">
-        <a href="index.html">
-          <img class="popup-close" src="img/close-cross.png" width="21" height="21" aria-label="Закрыть">
-        </a>
-        <label for="popup-letter">Текст письма:</label>
-        <input class="popup-letter" id="popup-letter" type="text" name="letter" placeholder="В свободной форме">
-      </p>
-      <button class="button popup-button" type="submit">Отправить</button>
-    </section>
+
   </main>
   <footer class="page-footer main-footer">
     <section class="footer-social container">
 
       <ul class="social-list">
         <li>
-          <a class="social-button" href="#">
-            <img class="social-logo" src="img/vk.png" width="81" height="81" alt="vk-logo">
+          <a class="social-button social-button--vk" href="#">
+            <!-- <img class="social-logo" src="img/vk.png" width="81" height="81" alt="vk-logo">*/ -->
           </a>
         </li>
         <li>
-          <a class="social-button" href="#">
-            <img class="social-logo" src="img/facebook.png" width="81" height="81" alt="facebook-logo">
+          <a class="social-button social-button--fb" href="#">
+            <!-- <img class="social-logo" src="img/facebook.png" width="81" height="81" alt="facebook-logo"> -->
           </a>
         </li>
         <li>
-          <a class="social-button" href="#">
-            <img class="social-logo" src="img/insta.png" width="81" height="81" alt="insta-logo">
+          <a class="social-button social-button--insta" href="#">
+            <!-- <img class="social-logo" src="img/insta.png" width="81" height="81" alt="insta-logo"> -->
           </a>
         </li>
       </ul>
@@ -212,6 +199,26 @@
       <p>Скидка 10% для друзей из социальных сетей.</p>
     </section>
   </footer>
+  <section class="popup">
+    <h3 class="popup-h">Напишите нам</h3>
+    <p class="popup-item-p">
+      <label for="popup-name">Ваше имя:</label>
+      <input class="popup-name" id="popup-name" type="text" name="name" placeholder="Имя Фамилия">
+    </p>
+    <p class="popup-item-p">
+      <label for="popup-email">Ваш email:</label>
+      <input class="popup-name" id="popup-email" type="email" name="email" placeholder="email@example.com">
+    </p>
+    <p class="popup-item-text">
+      <label for="popup-letter">Текст письма:</label>
+      <textarea class="popup-letter" id="popup-letter" name="letter" placeholder="В свободной форме">
+        </textarea>
+    </p>
+    <button class="button popup-button" type="submit">Отправить</button>
+    <button class="popup-close" aria-label="Закрыть окно">
+      <!-- <img class="popup-close" src="img/close-cross.svg" width="21" height="21"> -->
+    </button>
+  </section>
 </body>
 
 </html>

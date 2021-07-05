@@ -47,9 +47,10 @@
   }
   /* Начало шапки */
   .main-header{
-    min-width: 1440px;
+
     padding:0;
     margin-left: 0;
+    background-color: var(--basic-very-light-gray);
   }
 
 .main-navigation {
@@ -104,12 +105,6 @@ color: var(--basic-black);
 opacity: 0.3;
 }
 
-
-
-.site-navigation:last-child{
-  margin-right: 0;
-}
-
 .logo-link{
   order:0;
   width:160px;
@@ -162,12 +157,15 @@ position: relative;
 /* Конец шапки */
 
 /* Начало слайдера */
+.slider-background{
+  background-color: var(--basic-very-dark-grey-2);
+}
+
 .slider{
 background-color: var(--basic-very-light-gray);
 margin-top:0;
 margin-bottom: 80px;
 margin: 0 auto;
-width: 1440px;
 display: grid;
 grid-template-areas: 'slide';
 }
@@ -261,6 +259,7 @@ height: 18px;
 padding:0;
 appearance: none;
 justify-content: center;
+
 }
 
 
@@ -559,11 +558,12 @@ margin: 0;
 .nerds-illustration{
   width: 360px;
   height: 208px;
-  padding-bottom: 37px;
 }
 /*Конец блока с преимуществами*/
 
 /* Блок с клиентами компании*/
+
+
 .clients-section{
   display: flex;
   justify-content: space-around;
@@ -587,33 +587,35 @@ margin: 0;
 .img-clients:focus{
   opacity: 0.1;
 }
-
+.clients{
+  width: 280px;
+  height: 180px;
+}
 
 .clients-html{
-width: 199px;
-height: 57px;
 background-image: url("img/rectangle2.png");
 background-repeat: no-repeat;
 background-position: right,0 0;
+top:50%;
 
 }
 
 .clients-borodimskiy{
-  width: 209px;
-  height: 90px;
   background-image: url("img/rectangle2.png");
   background-repeat: no-repeat;
   background-position: right,0 0;
+  top:50%;
 
 }
 
 .clients-pink{
-  width: 185px;
-  height: 52px;
   background-image: url("img/rectangle2.png");
   background-repeat: no-repeat;
   background-position: right,0 0;
+  top:50%;
 }
+
+
 /* Конец блока с клиентами компании*/
 
 /* Блок с контактами*/
@@ -625,7 +627,6 @@ background-position: right,0 0;
   display: grid;
   grid-template-areas: 'contacts';
   margin: 0;
-  width: 1440px;
 }
 
 .contacts-figcaption{
@@ -634,9 +635,10 @@ background-position: right,0 0;
   background-color: white;
   width: 400px;
   height: 350px;
-  margin-left: 140px;
-  margin-top: 54px;
-  margin-bottom: 54px;
+  padding: 49px 48px 47px;
+  margin-left: calc((100% - 1175px) / 2);
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .map{
@@ -647,7 +649,6 @@ background-position: right,0 0;
 width: 100%;
 display: block;
 object-fit: cover;
-width: 1440px;
 height: 416px;
 }
 
@@ -657,10 +658,7 @@ font-size: 18px;
 line-height: 30px;
 text-transform: uppercase;
 color: var(--basic-black);
-padding-top: 49px;
-padding-left: 50px;
-padding-right: 76px;
-padding-bottom: 22.71px;}
+}
 
 .address
 {
@@ -670,8 +668,6 @@ line-height: 18px;
 align-items: center;
 color: var(--basic-very-dark-grey-2);
 width: 230px;
-padding-left: 50px;
-padding-right: 39px;
 }
 
 .contacts-phone{
@@ -681,10 +677,6 @@ padding-right: 39px;
   align-items: center;
   color: var(--basic-very-dark-grey-2);
   width: 230px;
-  padding-top: 0;
-  padding-left: 50px;
-  padding-right: 39px;
-
 }
 
 .button-write{
@@ -692,10 +684,6 @@ padding-right: 39px;
   width: 219px;
   height: 50px;
   grid-area: contacts;
-  margin-top: 37.29px;
-  margin-left: 50px;
-  margin-right: 50px;
-
 }
 /* Конец блока с контактами */
 
@@ -703,7 +691,8 @@ padding-right: 39px;
 .main-footer{
 display: flex;
 flex-wrap: wrap;
-margin:0 auto;}
+margin:68px auto;
+}
 
 .footer-social{
 display:flex;
@@ -739,30 +728,75 @@ min-width: 400px;
 margin: 0;
 }
 
-.social-logo{}
+/* .social-logo{} */
 
-.social-logo:hover{}
+/* .social-logo:hover{} */
 
 
-.social-logo:active,
-.social-logo:focus{}
+/* .social-logo:active, */
+/* .social-logo:focus{} */
+
+.social-button{
+  display: block;
+  width: 81px;
+  height: 81px;
+  background-color: var(--basic-very-light-gray-2);
+  border-radius: 50%;
+}
+
+.social-button:hover{
+  background-color: var(--basic-red2);
+}
+
+.social-button:active,
+.social-button:focus{
+  background-color: var(--basic-red3);
+  opacity: 0.3;
+}
+.social-button--vk{
+  background-image: url(img/vk-icon.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.social-button--fb{
+  background-image: url(img/fb-icon.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.social-button--insta{
+  background-image: url(img/insta-icon.svg);
+  background-position:  center;
+  background-repeat: no-repeat;
+}
 
 
 /*Popup*/
 .popup{
-  display:flex;
+  display:none;
   flex-wrap: wrap;
   width: 960px;
-  height: auto;
+  height: max-content;
   background-color: var(--basic-white);
   padding:100px 100px;
   box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
-  top: 0px;
   right: 0;
-  bottom: 0;
-  left: 0;
   margin: auto;
   position: relative;
+}
+
+.popup-item p{
+  width: 50%;
+}
+
+.popup.active{
+  display: flex;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  position: fixed;
+  z-index: 999;
 }
 
 .popup-close{
@@ -774,6 +808,9 @@ margin: 0;
   border: 0;
   cursor: pointer;
   opacity: 0.3;
+  background-image: url(img/close-cross.svg);
+  background-repeat: no-repeat;
+  background-color: var(--basic-white);
 }
 
 .popup-close:hover{
@@ -801,6 +838,7 @@ margin: 0;
 }
 
 .popup-h{
+  width: 100%;
 height: 53px;
 font-family: Roboto;
 font-style: normal;
@@ -808,6 +846,10 @@ font-weight: bold;
 font-size: 45px;
 line-height: 53px;
 color: #000000;
+}
+
+.popup-item-p{
+  width: 50%;
 }
 
 .popup-letter{
