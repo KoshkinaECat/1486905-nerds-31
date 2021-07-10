@@ -15,60 +15,88 @@
 </head>
 
 <body class="page-body">
-  <header class="main-header">
+  <header class="header">
+    <div class="header__inner container">
+      <a href="index.html" class="logo">
+        <img src="img/nerds-logo.svg" alt="Логотип компании" class="logo__img">
+      </a>
+      <nav class="menu">
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a href="blank.html" class="menu__link">Студия</a>
+          </li>
+          <li class="menu__item">
+            <a href="blank.html" class="menu__link">Клиенты</a>
+          </li>
+          <li class="menu__item">
+            <a href="catalog.html" class="menu__link">Магазин</a>
+          </li>
+          <li class="menu__item">
+            <a href="blank.html" class="menu__link">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="cart">
+        <a href="blank.html" class="cart__link">Корзина</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- <header class="main-header">
     <nav class="main-navigation container">
       <ul class="site-navigation">
-        <li class="logo-link"><a href="index.html">
-            <img src="img/nerds-logo.svg" width="160" height="66" alt="nerds-logo">
+        <li><a class="logo-link" href="index.html">
+            <img class="logo-img" src="img/nerds-logo.svg" width="160" height="66" alt="Логотип компании Нёрдс"
+              style="max-width: none;">
           </a></li>
-        <li class="navigation"><a href="blank.html">Студия</a></li>
-        <li class="navigation"><a href="blank.html">Клиенты</a></li>
-        <li class="navigation"><a href="catalog.html">Магазин</a></li>
-        <li class="navigation"><a href="blank.html">Контакты</a></li>
+        <li class="navigation"><a class="navigation__link" href="blank.html">Студия</a></li>
+        <li class="navigation"><a class="navigation__link" href="blank.html">Клиенты</a></li>
+        <li class="navigation"><a class="navigation__link" href="catalog.html">Магазин</a></li>
+        <li class="navigation"><a class="navigation__link" href="blank.html">Контакты</a></li>
         <li class="cart">
           <a href="blank.html">Корзина</a>
         </li>
       </ul>
     </nav>
-  </header>
+  </header> -->
 
   <main>
 
-    <h2 class="visually-hidden">Дизайн-студия Nёrds</h2>
+    <h1 class="visually-hidden">Дизайн-студия Nёrds</h1>
     <div style="background-color:#EEEEEE;">
       <section class="slider container">
         <h2 class="visually-hidden">Слайдер</h2>
-        <figure class="slide">
+        <figure class="slide slide--current">
           <figcaption>
-            <h3>Долго, дорого, скурпулезно.</h3>
-            <p>Математически выверенный дизайн для вашего сайта или мобильного приложения</p>
-            <p><button class="button" type="button">Узнать больше</button></p>
+            <h3>Долго, дорого, скрупулезно.</h3>
+            <p>
+              Математически выверенный дизайн <br>
+              для вашего сайта или мобильного приложения
+            </p>
+            <button class="button" type="button">Узнать больше</button>
           </figcaption>
           <img class="nerds-slide-img" src="img/nerds-index-slide1.png" width="760" height="431" alt="Слайд 1">
         </figure>
 
-        <figure class="slide visually-hidden container">
+        <figure class="slide">
           <figcaption>
             <h3>Любим математику как никто другой</h3>
             <p>Никакого креатива, только математические формулы для расчета идеальных пропорций</p>
-            <p><button class="button" type="button">Узнать больше</button></p>
-            <img src="img/nerds-index-slide2.png" width="760" height="431" alt="Слайд 2">
+            <button class="button" type="button">Узнать больше</button>
           </figcaption>
+          <img src="img/nerds-index-slide2.png" width="760" height="431" alt="Слайд 2">
         </figure>
 
-        <figure class="slide visually-hidden container">
+        <figure class="slide">
           <figcaption>
             <h3>Только ночь,
               только хардкор</h3>
             <p>Работать днем, как все? Мы против этого.
               Ближе к полуночи работа только начинается.</p>
-            <p><button class="button" type="button">Узнать больше</button></p>
+            <button class="button" type="button">Узнать больше</button>
           </figcaption>
           <img src="img/nerds-index-slide3.png" width="760" height="431" alt="Слайд 3">
         </figure>
-
-
-        <h2 class="visually-hidden">Переключатели</h2>
         <div class="slider-controls">
           <button type="button" class="current"></button>
           <button type="button"></button>
@@ -87,7 +115,7 @@
           </a>
           <h3>ВЕБ-САЙТЫ</h3>
           <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-          <button class="button services-button1" type="button">ЗАКАЗАТЬ</button>
+          <button class="button button-services services-button1" type="button">ЗАКАЗАТЬ</button>
         </li>
 
         <li class="services-item">
@@ -96,7 +124,7 @@
           </a>
           <h3>ПРИЛОЖЕНИЯ</h3>
           <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-          <button class="button services-button2" type="button">ЗАКАЗАТЬ</button>
+          <button class="button button-services services-button2" type="button">ЗАКАЗАТЬ</button>
         </li>
         <li class="services-item">
           <a class="services-img">
@@ -104,13 +132,13 @@
           </a>
           <h3>ПРЕЗЕНТАЦИИ</h3>
           <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-          <button class="button services-button3" type="button">ЗАКАЗАТЬ</button>
+          <button class="button button-services services-button3" type="button">ЗАКАЗАТЬ</button>
         </li>
       </ul>
     </section>
     <section class="about-company-section container">
       <div class="about-company">
-        <h3 class="slogan">Мы — маленькая, но гордая дизайн-студия из Краснодара.</h3>
+        <h2 class="slogan">Мы — маленькая, но гордая дизайн-студия из Краснодара.</h2>
         <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не
           покладая рук, как роботы.</p>
 
@@ -142,23 +170,21 @@
 
     <section class="clients-section container">
       <h2 class="visually-hidden">Клиенты</h2>
-      <a class="clients clients-html">
+      <a class="clients">
         <img class="img-clients" src="img/htmlacademy.svg" width="199" height="57" alt="Логотип htmlacademy">
       </a>
-      <a class="clients clients-borodimskiy">
+      <a class="clients">
         <img class="img-clients" src="img/borodinskiy.svg" width="209" height="90" alt="Логотип Бородинский">
       </a>
-      <a class="clients clients-pink">
+      <a class="clients">
         <img class="img-clients" src="img/pink.svg" width="185" height="52" alt="Логотип Pink">
       </a>
-      <a class="clients clients-mishka">
+      <a class="clients">
         <img class="img-clients" src="img/mishka.svg" width="173" height="84" alt="Логотип Mishka">
       </a>
     </section>
-
-
-
-
+  </main>
+  <footer class="page-footer main-footer">
     <section class="contacts">
       <h2 class="visually-hidden">Контакты</h2>
       <figure class="contacts-figure">
@@ -173,9 +199,6 @@
         </a>
       </figure>
     </section>
-
-  </main>
-  <footer class="page-footer main-footer">
     <section class="footer-social container">
 
       <ul class="social-list">
@@ -195,8 +218,10 @@
           </a>
         </li>
       </ul>
-      <h3>Давайте дружить, это выгодно!</h3>
-      <p>Скидка 10% для друзей из социальных сетей.</p>
+      <div>
+        <h3>Давайте дружить, это выгодно!</h3>
+        <p>Скидка 10% для друзей из социальных сетей.</p>
+      </div>
     </section>
   </footer>
   <section class="popup">

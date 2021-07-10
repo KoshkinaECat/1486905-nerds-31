@@ -14,23 +14,60 @@
   <link rel="manifest" href="manifest.webmanifest">
 </head>
 
-<body class="page-body inner-page">
+<body class="page-body">
+  <header class="header">
+    <div class="header__inner container">
+      <a href="index.html" class="logo">
+        <img src="img/nerds-logo.svg" alt="Логотип компании" class="logo__img">
+      </a>
+      <nav class="menu">
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a href="blank.html" class="menu__link">Студия</a>
+          </li>
+          <li class="menu__item">
+            <a href="blank.html" class="menu__link">Клиенты</a>
+          </li>
+          <li class="menu__item">
+            <a href="catalog.html" class="menu__link menu__link_active">Магазин</a>
+          </li>
+          <li class="menu__item">
+            <a href="blank.html" class="menu__link">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="cart">
+        <a href="blank.html" class="cart__link">Корзина</a>
+      </div>
+    </div>
+  </header>
+
+  <div class="title">
+    <div class="container">
+      <h1>
+        Магазин готовых шаблонов
+      </h1>
+    </div>
+  </div>
+
+<!-- <body class="page-body inner-page">
   <header class="main-header">
     <nav class="main-navigation container">
       <ul class="site-navigation">
-        <li class="logo-link"><a href="index.html">
-            <img src="img/nerds-logo.svg" width="160" height="66" alt="nerds-logo">
+        <li><a class="logo-link" href="index.html">
+            <img class="logo-img" src="img/nerds-logo.svg" width="160" height="66" alt="Логотип компании Нёрдс"
+              style="max-width: none;">
           </a></li>
-        <li class="navigation"><a href="blank.html">Студия</a></li>
-        <li class="navigation"><a href="blank.html">Клиенты</a></li>
-        <li class="navigation"><a href="catalog.html">Магазин</a></li>
-        <li class="navigation"><a href="blank.html">Контакты</a></li>
+        <li class="navigation"><a class="navigation__link" href="blank.html">Студия</a></li>
+        <li class="navigation"><a class="navigation__link" href="blank.html">Клиенты</a></li>
+        <li class="navigation"><a class="navigation__link navigation__link_active" href="catalog.html">Магазин</a></li>
+        <li class="navigation"><a class="navigation__link" href="blank.html">Контакты</a></li>
         <li class="cart">
           <a href="blank.html">Корзина</a>
         </li>
       </ul>
     </nav>
-  </header>
+  </header> -->
 
   <main class="page-catalog">
     <section class="sorting">
@@ -39,10 +76,10 @@
         <li><a class="sorting-link sorting-link--active" href="#">По цене</a></li>
         <li><a class="sorting-link" href="#">По типу </a></li>
         <li><a class="sorting-link" href="#">По названию</a></li>
-        <li><a class="sorting-link" href="#"><img class="icon-down-dir" src="img/icon-down-dir.png" width="11"
-              height="10" alt="icon-down-dir"></a></li>
-        <li><a class="sorting-link" href="#"><img class="icon-up-dir" src="img/icon-up-dir.png" width="11" height="10"
-              alt="icon-up-dir"></a></li>
+        <li><a class="sorting-link" href="#"><img class="icon-down-dir" src="img/down.svg" width="11" height="10"
+              alt="по убыванию"></a></li>
+        <li><a class="sorting-link" href="#"><img class="icon-up-dir" src="img/up.svg" width="11" height="10"
+              alt="по возрастанию"></a></li>
       </ul>
     </section>
     <section class="filters">
@@ -161,7 +198,7 @@
           <p class="text-demonstration">Сайт салона красоты. Для мужчин, да.</p>
           <button class="button" type="button">9 900 &#8381;</button>
         </div>
-        <a href="blank.html">
+        <a href="blank.html" class="product-link">
           <img src="img/img-barbershop.jpg" width="358" height="578" alt="Barbershop">
         </a>
       </article>
@@ -175,7 +212,7 @@
           <p class="text-demonstration">Интернет-магазин вязаных игрушек</p>
           <button class="button" type="button">9 900 &#8381;</button>
         </div>
-        <a href="blank.html">
+        <a href="blank.html" class="product-link">
           <img src="img/img-mishka.jpg" width="359" height="578" alt="Mishka">
         </a>
       </article>
@@ -189,7 +226,7 @@
           <p class="text-demonstration">Лендинг курсов повышения квалификации</p>
           <button class="button" type="button">9 900 &#8381;</button>
         </div>
-        <a href="blank.html">
+        <a href="blank.html" class="product-link">
           <img src="img/img-aplus.jpg" width="359" height="578" alt="Aplus">
         </a>
       </article>
@@ -203,7 +240,7 @@
           <p class="text-demonstration">Промо-сайт производителя крафтового кваса</p>
           <button class="button" type="button">9 900 &#8381;</button>
         </div>
-        <a href="blank.html">
+        <a href="blank.html" class="product-link">
           <img src="img/img-kvast.jpg" width="359" height="578" alt="Kvast">
         </a>
       </article>
@@ -224,22 +261,21 @@
       </ul>
     </section>
   </main>
-
-  <section class="contacts">
-    <h2 class="visually-hidden">Контакты</h2>
-    <figure class="contacts-figure">
-      <figcaption class="contacts-figcaption">
-        <h3>NЁRDS DESIGN STUDIO</h3>
-        <p class="address">наб. Реки Карповки, 5 лит П, Санкт-Петербург</p>
-        <a class="contacts-phone" href="tel:+78005558628">+7 800 555-86-28</a><br>
-        <button class="button button-write" type="button">НАПИШИТЕ НАМ</button>
-      </figcaption>
-      <a class="map">
-        <img class="map-img" src="img/map.png" width="1440" height="416" alt="Контакты">
-      </a>
-    </figure>
-  </section>
   <footer class="page-footer main-footer">
+    <section class="contacts">
+      <h2 class="visually-hidden">Контакты</h2>
+      <figure class="contacts-figure">
+        <figcaption class="contacts-figcaption">
+          <h3>NЁRDS DESIGN STUDIO</h3>
+          <p class="address">наб. Реки Карповки, 5 лит П, Санкт-Петербург</p>
+          <a class="contacts-phone" href="tel:+78005558628">+7 800 555-86-28</a>
+          <button class="button button-write" type="button">НАПИШИТЕ НАМ</button>
+        </figcaption>
+        <a class="map">
+          <img class="map-img" src="img/map.png" width="1440" height="416" alt="Контакты">
+        </a>
+      </figure>
+    </section>
     <section class="footer-social container">
 
       <ul class="social-list">
