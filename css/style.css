@@ -64,9 +64,7 @@
 }
 
 .container {
-  width: 1160px;
-  padding-left: 20px;
-  padding-right: 20px;
+  width: 1157px;
   margin: 0 auto;
 }
 
@@ -100,6 +98,8 @@ img {
 .logo__img {
   max-height: 100%;
   min-width: 100%;
+  margin-top: 1px;
+  margin-left: 6px;
 }
 
 .menu {
@@ -113,6 +113,8 @@ img {
   list-style: none;
   display: flex;
   align-items: center;
+  margin-top: 19px;
+  margin-left: 8px;
 }
 
 
@@ -158,6 +160,8 @@ img {
   position: relative;
   display: flex;
   align-items: center;
+  margin-right: -16px;
+  padding-left: 10px;
 }
 
 .cart__link::before {
@@ -173,6 +177,7 @@ img {
 
 .cart a {
   color: var(--basic-black);
+  margin-top: 3px;
 }
 
 
@@ -260,10 +265,9 @@ img {
   align-items: center;
   font-weight: 500;
   font-size: 55px;
-  line-height: 55px;
-  margin-top: 78px;
-  margin-bottom: 25px;
-  width: 538px;
+  line-height: 54px;
+  margin-top: 75px;
+  margin-bottom: 26px;
 }
 
 .slide p {
@@ -282,12 +286,9 @@ img {
 }
 
 .nerds-slide-img {
-  width: 760px;
-  height: 431px;
   display: block;
-  margin-right: 537px;
-  width: 760px;
-  height: 431px;
+  padding-right: 1px;
+  padding-bottom: 11px;
 }
 
 
@@ -345,8 +346,8 @@ img {
   appearance: none;
   justify-content: center;
   position: absolute;
-  bottom: 96px;
-  left: 50%;
+  bottom: 100px;
+  left: 587px;
   transform: translateX(-50%);
   z-index: 9;
   padding-left: 17px;
@@ -394,11 +395,9 @@ img {
 /*Блок с услугами*/
 .services {
   background-color: var(--basic-white);
-  margin: 0 auto;
-  min-width: 1175px;
-  margin-bottom: 82px;
-  margin-top: 80px;
-  padding: 0;
+  min-width: 1157px;
+  margin-top: 69px;
+  padding: 7px;
 }
 
 .services-list {
@@ -413,11 +412,17 @@ img {
 .services-item {
   width: 300px;
   margin-bottom: 36px;
-
 }
 
 .services-item:not(:nth-child(3n-2)) {
   margin-left: 100px;
+}
+
+.services_h {
+  font-size: 24px;
+  line-height: 30px;
+  padding-left: 1px;
+  padding-top: 1px;
 }
 
 .services-img {
@@ -429,20 +434,19 @@ img {
   color: var(--basic-black);
 }
 
-.services-item p {
-  margin: 0;
+.services_p {
   width: 260px;
-  height: 48px;
   font-weight: normal;
   font-size: 16px;
   line-height: 24px;
   color: var(--basic-extra-dark);
-  padding-bottom: 32px;
+  margin-top: -7px;
 }
+
 
 .button-services {
   min-width: initial;
-  margin-top: 37px;
+  margin-top: 16px;
 }
 
 .services-button1 {
@@ -515,15 +519,15 @@ img {
   display: flex;
   justify-content: space-between;
 
-  min-width: 1175px;
+  min-width: 1157px;
   height: 413px;
   font-weight: 500;
   font-size: 45px;
   line-height: 45px;
   color: var(--basic-black);
-  margin: 0 auto;
-  margin-bottom: 75px;
   position: relative;
+  margin-top: 75px;
+  margin-left: 62px;
 }
 
 .about-company-section::before {
@@ -545,14 +549,12 @@ img {
 }
 
 .slogan {
-  width: 651px;
-  height: 91px;
-  padding-bottom: 32px;
   font-family: Roboto, arial, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 45px;
   line-height: 45px;
+  padding-left: 1px;
 }
 
 .about-company {
@@ -560,14 +562,14 @@ img {
   height: 413px;
 }
 
-
-.about-company p {
+.about-company_p {
   font-weight: normal;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 21px;
   color: var(--basic-extra-dark);
-  padding-bottom: 40px;
+  padding-bottom: 25px;
 }
+
 
 .about-company-span {
   font-style: normal;
@@ -583,8 +585,6 @@ img {
   line-height: 24px;
   text-transform: uppercase;
   color: var(--basic-extra-dark);
-  padding-bottom: 23px;
-
 }
 
 .benefits-list {
@@ -597,6 +597,8 @@ img {
 
 .benefits-item {
   position: relative;
+  margin-top: 24px;
+  margin-left: -5px;
 }
 
 .benefits-item::before {
@@ -618,7 +620,8 @@ img {
   align-items: center;
   text-align: center;
   text-transform: uppercase;
-  padding-bottom: 31px;
+  padding-top: 21px;
+  padding-left: 20px;
 }
 
 
@@ -655,7 +658,8 @@ img {
   flex-direction: column;
   flex-wrap: wrap;
   height: 101px;
-  margin: 0;
+  margin-top: 31px;
+  margin-left: 2px;
 }
 
 .working-conditions {
@@ -665,6 +669,8 @@ img {
 .nerds-illustration {
   width: 360px;
   height: 208px;
+  margin-left: 2px;
+  margin-top: 2px;
 }
 
 /*Конец блока с преимуществами*/
@@ -675,8 +681,8 @@ img {
 .clients-section {
   display: flex;
   flex-wrap: wrap;
-  padding: 0;
-  margin: 0 auto;
+  margin-top: 79px;
+  margin-left: 66px;
   background-image: url("../img/rectangle1.png");
   background-position: bottom, 0 0;
   background-repeat: no-repeat;
@@ -704,6 +710,14 @@ img {
   place-items: center;
 }
 
+.img-clients-academy {
+  margin-left: -24px;
+}
+
+.img-clients-mishka {
+  margin-right: -22px;
+}
+
 .clients:nth-of-type(4n-3),
 .clients:last-of-type {
   width: 278px;
@@ -726,7 +740,7 @@ img {
 
 /* Блок с контактами*/
 .contacts {
-  margin: 0 auto;
+  padding-left: 17px;
 }
 
 .contacts-figure {
@@ -741,7 +755,10 @@ img {
   background-color: var(--basic-white);
   width: 319px;
   height: 308px;
-  padding: 49px 48px 47px;
+  padding-top: 50px;
+  padding-right: 50px;
+  padding-bottom: 42px;
+  padding-left: 39px;
   margin-left: calc((100% - 1175px) / 2);
   margin-top: auto;
   margin-bottom: auto;
@@ -787,6 +804,8 @@ img {
   min-width: 219px;
   min-height: 50px;
   grid-area: contacts;
+  margin-top: 20px;
+  margin-left: 18px;
 }
 
 /* Конец блока с контактами */
@@ -811,7 +830,9 @@ img {
   font-size: 36px;
   line-height: 36px;
   color: var(--basic-black);
-  margin-top: 18px;
+  margin-top: 7px;
+  margin-left: 7px;
+  height: 0;
 }
 
 .footer-social p {
@@ -820,7 +841,9 @@ img {
   font-size: 16px;
   line-height: 22px;
   color: var(--basic-very-dark-gray);
-  margin: 0;
+  height: 0;
+  margin-top: 9px;
+  margin-left: 6px;
 }
 
 .social-list {
@@ -842,6 +865,7 @@ img {
   height: 81px;
   background-color: var(--basic-very-light-gray-2);
   border-radius: 50%;
+  margin-left: 3px;
 }
 
 .social-button:hover {
