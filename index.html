@@ -7,7 +7,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   <link href="normalize.css" rel="stylesheet">
-  <link href="style.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="favicon/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="favicon/180.png">
@@ -15,63 +15,78 @@
 </head>
 
 <body class="page-body">
-  <header class="main-header">
-    <nav class="main-navigation">
-      <ul class="site-navigation">
-        <li class="logo-link"><a href="index.html">
-            <img src="img/nerds-logo.svg" width="160" height="66" alt="nerds-logo">
-          </a></li>
-        <li class="navigation"><a href="blank.html">Студия</a></li>
-        <li class="navigation"><a href="blank.html">Клиенты</a></li>
-        <li class="navigation"><a href="catalog.html">Магазин</a></li>
-        <li class="navigation"><a href="blank.html">Контакты</a></li>
-        <li class="cart">
-          <a href="blank.html">Корзина</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
-
-  <main>
-    <h2 class="visually-hidden">Дизайн-студия Nёrds</h2>
-    <section class="slider">
-      <h2 class="visually-hidden">Слайдер</h2>
-      <figure class="slide">
-        <figcaption>
-          <h3>Долго, дорого, скурпулезно.</h3>
-          <p>Математически выверенный дизайн для вашего сайта или мобильного приложения</p>
-          <p><button class="button" type="button">Узнать больше</button></p>
-        </figcaption>
-        <img class="nerds-slide-img" src="img/nerds-index-slide1.png" width="760" height="431" alt="Слайд 1">
-      </figure>
-
-      <figure class="slide visually-hidden container">
-        <figcaption>
-          <h3>Любим математику как никто другой</h3>
-          <p>Никакого креатива, только математические формулы для расчета идеальных пропорций</p>
-          <p><button class="button" type="button">Узнать больше</button></p>
-          <img src="img/nerds-index-slide2.png" width="760" height="431" alt="Слайд 2">
-        </figcaption>
-      </figure>
-
-      <figure class="slide visually-hidden container">
-        <figcaption>
-          <h3>Только ночь,
-            только хардкор</h3>
-          <p>Работать днем, как все? Мы против этого.
-            Ближе к полуночи работа только начинается.</p>
-          <p><button class="button" type="button">Узнать больше</button></p>
-        </figcaption>
-        <img src="img/nerds-index-slide3.png" width="760" height="431" alt="Слайд 3">
-      </figure>
-
-      <h2 class="visually-hidden">Переключатели</h2>
-      <div class="slider-controls">
-        <button type="button" class="current"></button>
-        <button type="button"></button>
-        <button type="button"></button>
+  <header class="header">
+    <div class="header__inner container">
+      <a href="index.html" class="logo">
+        <img src="img/nerds-logo.svg" alt="Логотип компании" class="logo__img" height="160" width="65">
+      </a>
+      <nav class="menu">
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a href="blank.html" class="menu__link">Студия</a>
+          </li>
+          <li class="menu__item">
+            <a href="blank.html" class="menu__link">Клиенты</a>
+          </li>
+          <li class="menu__item">
+            <a href="catalog.html" class="menu__link">Магазин</a>
+          </li>
+          <li class="menu__item">
+            <a href="blank.html" class="menu__link">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="cart">
+        <a href="blank.html" class="cart__link">Корзина</a>
       </div>
-    </section>
+    </div>
+  </header>
+  <main>
+
+    <h1 class="visually-hidden">Дизайн-студия Nёrds</h1>
+    <div style="background-color:#EEEEEE;">
+      <section class="slider container">
+        <h2 class="visually-hidden">Слайдер</h2>
+        <figure class="slide slide--current">
+          <figcaption>
+            <h3>Долго, дорого, скрупулезно.</h3>
+            <p>
+              Математически выверенный дизайн <br>
+              для вашего сайта или мобильного приложения
+            </p>
+            <button class="button" type="button">Узнать больше</button>
+          </figcaption>
+          <img class="nerds-slide-img" src="img/nerds-index-slide1.png" width="760" height="431" alt="Слайд 1">
+        </figure>
+
+        <figure class="slide">
+          <figcaption>
+            <h3>Любим математику <br>
+              как никто другой</h3>
+            <p>Никакого креатива, только математические формулы для расчета идеальных пропорций</p>
+            <button class="button" type="button">Узнать больше</button>
+          </figcaption>
+          <img src="img/nerds-index-slide2.png" width="760" height="431" alt="Слайд 2">
+        </figure>
+
+        <figure class="slide">
+          <figcaption>
+            <h3>Только ночь,<br>
+              только хардкор</h3>
+            <p>Работать днем, как все? Мы против этого.<br>
+              Ближе к полуночи работа только начинается.</p>
+            <button class="button" type="button">Узнать больше</button>
+          </figcaption>
+          <img src="img/nerds-index-slide3.png" width="760" height="431" alt="Слайд 3">
+        </figure>
+        <div class="slider-controls">
+          <button type="button" class="current"></button>
+          <button type="button"></button>
+          <button type="button"></button>
+        </div>
+      </section>
+    </div>
+
 
     <section class="services container">
       <h2 class="visually-hidden">Услуги</h2>
@@ -82,7 +97,7 @@
           </a>
           <h3>ВЕБ-САЙТЫ</h3>
           <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-          <button class="button services-button1" type="button">ЗАКАЗАТЬ</button>
+          <button class="button button-services services-button1" type="button">ЗАКАЗАТЬ</button>
         </li>
 
         <li class="services-item">
@@ -91,7 +106,7 @@
           </a>
           <h3>ПРИЛОЖЕНИЯ</h3>
           <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-          <button class="button services-button2" type="button">ЗАКАЗАТЬ</button>
+          <button class="button button-services services-button2" type="button">ЗАКАЗАТЬ</button>
         </li>
         <li class="services-item">
           <a class="services-img">
@@ -99,13 +114,13 @@
           </a>
           <h3>ПРЕЗЕНТАЦИИ</h3>
           <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-          <button class="button services-button3" type="button">ЗАКАЗАТЬ</button>
+          <button class="button button-services services-button3" type="button">ЗАКАЗАТЬ</button>
         </li>
       </ul>
     </section>
     <section class="about-company-section container">
       <div class="about-company">
-        <h3 class="slogan">Мы — маленькая, но гордая дизайн-студия из Краснодара.</h3>
+        <h2 class="slogan">Мы — маленькая, но гордая дизайн-студия из Краснодара.</h2>
         <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не
           покладая рук, как роботы.</p>
 
@@ -137,27 +152,28 @@
 
     <section class="clients-section container">
       <h2 class="visually-hidden">Клиенты</h2>
-      <a class="clients clients-html">
-        <img src="img/logo_htmlacademy.png" width="199" height="57" alt="Логотип htmlacademy">
+      <a class="clients" href="https://htmlacademy.ru/intensive/htmlcss">
+        <img class="img-clients" src="img/htmlacademy.svg" width="199" height="57" alt="Логотип htmlacademy">
       </a>
-      <a class="clients clients-borodimskiy">
-        <img src="img/logo-2.png" width="209" height="90" alt="Логотип Бородинский">
+      <a class="clients">
+        <img class="img-clients" src="img/borodinskiy.svg" width="209" height="90" alt="Логотип Бородинский">
       </a>
-      <a class="clients clients-pink">
-        <img src="img/logo-3.png" width="185" height="52" alt="Логотип Pink">
+      <a class="clients">
+        <img class="img-clients" src="img/pink.svg" width="185" height="52" alt="Логотип Pink">
       </a>
-      <a class="clients clients-mishka">
-        <img src="img/logo-4.png" width="173" height="84" alt="Логотип Mishka">
+      <a class="clients">
+        <img class="img-clients" src="img/mishka.svg" width="173" height="84" alt="Логотип Mishka">
       </a>
     </section>
-
+  </main>
+  <footer class="page-footer main-footer">
     <section class="contacts">
       <h2 class="visually-hidden">Контакты</h2>
       <figure class="contacts-figure">
         <figcaption class="contacts-figcaption">
           <h3>NЁRDS DESIGN STUDIO</h3>
           <p class="address">наб. Реки Карповки, 5 лит П, Санкт-Петербург</p>
-          <a class="contacts-phone" href="tel:+78005558628">+7 800 555-86-28</a><br>
+          <a class="contacts-phone" href="tel:+78005558628">+7 800 555-86-28</a>
           <button class="button button-write" type="button">НАПИШИТЕ НАМ</button>
         </figcaption>
         <a class="map">
@@ -165,52 +181,47 @@
         </a>
       </figure>
     </section>
-  </main>
-  <footer class="page-footer main-footer">
     <section class="footer-social container">
 
       <ul class="social-list">
         <li>
-          <a class="social-button" href="#">
-            <img src="img/vk.svg" width="81" height="81" alt="vk-logo">
+          <a class="social-button social-button--vk" href="blank.html">
           </a>
         </li>
         <li>
-          <a class="social-button" href="#">
-            <img src="img/facebook.svg" width="81" height="81" alt="facebook-logo">
+          <a class="social-button social-button--fb" href="blank.html">
           </a>
         </li>
         <li>
-          <a class="social-button" href="#">
-            <img src="img/insta.svg" width="81" height="81" alt="insta-logo">
+          <a class="social-button social-button--insta" href="blank.html">
           </a>
         </li>
       </ul>
-      <h3>Давайте дружить, это выгодно!</h3>
-      <p>Скидка 10% для друзей из социальных сетей.</p>
+      <div>
+        <h3>Давайте дружить, это выгодно!</h3>
+        <p>Скидка 10% для друзей из социальных сетей.</p>
+      </div>
     </section>
   </footer>
-
-  <section class="popup active visually-hidden">
-    <h3>Напишите нам</h3>
-    <p class="popup-item">
+  <section class="popup">
+    <h3 class="popup-h">Напишите нам</h3>
+    <p class="popup-item-p">
       <label for="popup-name">Ваше имя:</label>
-      <input id="popup-name" type="text" name="name" placeholder="Имя Фамилия">
+      <input class="popup-name" id="popup-name" type="text" name="name" placeholder="Имя Фамилия">
     </p>
-    <p class="popup-item">
+    <p class="popup-item-p">
       <label for="popup-email">Ваш email:</label>
-      <input id="popup-email" type="email" name="email" placeholder="email@example.com">
+      <input class="popup-name" id="popup-email" type="email" name="email" placeholder="email@example.com">
     </p>
-    <p class="popup-item">
-      <a>
-        <img src="img/vector.svg" width="21" height="21" alt="Закрыть">
-      </a>
+    <p class="popup-item-text">
       <label for="popup-letter">Текст письма:</label>
-      <input id="popup-letter" type="text" name="letter" placeholder="В свободной форме">
+      <textarea class="popup-letter" id="popup-letter" name="letter" placeholder="В свободной форме">
+        </textarea>
     </p>
-    <button class="button" type="submit">Отправить</button>
+    <button class="button popup-button" type="submit">Отправить</button>
+    <button class="popup-close" aria-label="Закрыть окно">
+    </button>
   </section>
-
 </body>
 
 </html>
