@@ -224,6 +224,220 @@ img {
   background-color: var(--basic-very-dark-grey-2);
 }
 
+:root {
+  --basic-black: #000;
+  --basic-white: #fff;
+  --basic-gray: #a6a6a6;
+  --basic-extra-dark: #283136;
+  --basic-light-gray: #c1c1c1;
+  --basic-gray2: rgba(255, 255, 255, 0.3);
+  --basic-very-light-gray: #eee;
+  --basic-red: #fb565a;
+  --basic-red2: #e74246;
+  --basic-red3: #d7373b;
+  --basic-green: #00ca74;
+  --basic-green2: #00bc6c;
+  --basic-green3: #00aa62;
+  --basic-yellow: #efc849;
+  --basic-yellow2: #eab534;
+  --basic-yellow3: #e5a722;
+  --basic-very-light-gray-2: #e1e1e1;
+  --basic-very-dark-gray: #444;
+  --basic-very-dark-grey-2: #666;
+  --basic-very-dark: #283136;
+  --basic-color1: #cfcfcf;
+  --basic-color2: #00ca74;
+  --basic-color3: #d7dcde;
+  --basic-color4: #f1f1f1;
+  --basic-color5: #4d4d4d;
+  --basic-color6: rgba(0, 0, 0, 0.25);
+  --basic-color7: rgba(0, 0, 0, 0.1);
+  --basic-color8: #f2f2f2;
+  --basic-color9: rgba(180, 185, 187, 1);
+  --basic-color10: rgba(215, 220, 222, 1);
+  --basic-color11: rgba(0, 0, 0, 0.4);
+  --basic-color12: rgba(251, 86, 90, 1);
+  --basic-color13: #dbdbdb;
+  --basic-colo14: rgba(40, 49, 54, 1);
+  --basic-color15: #f1f1f1;
+  --basic-color16: rgba(255, 255, 225, 0);
+  --basic-color17: #dfdfdf;
+  --basic-color18: #d5d5d5;
+  --basic-color19: rgba(0, 0, 0, 0.3)
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box
+}
+
+.page-body {
+  margin: 0;
+  padding: 0;
+  font-family: Roboto, arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+  font-style: normal;
+  min-height: 100%
+}
+
+.container {
+  width: 1182px;
+  margin: 0 auto;
+  padding: 0 11px
+}
+
+a {
+  text-decoration: none
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block
+}
+
+.header {
+  background-color: var(--basic-very-light-gray);
+  padding-top: 48px
+}
+
+.header__inner {
+  display: flex;
+  justify-content: space-between
+}
+
+.logo {
+  width: 160px;
+  height: 65px;
+  display: flex
+}
+
+.logo__img {
+  max-height: 100%;
+  min-width: 100%
+}
+
+.menu {
+  margin-bottom: auto;
+  margin-top: 11px;
+  margin-left: 14%;
+  margin-right: 20.5%
+}
+
+.menu__list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin-top: 19px;
+  flex-wrap: wrap
+}
+
+.menu__item+.menu__item {
+  margin-left: 45px
+}
+
+.menu__link {
+  position: relative;
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--basic-black);
+  display: block;
+  text-transform: uppercase
+}
+
+.menu__link_active:after {
+  position: absolute;
+  content: "";
+  height: 2px;
+  background-color: var(--basic-red);
+  width: 100%;
+  left: 0;
+  bottom: -18px
+}
+
+.cart {
+  display: flex;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  align-items: center;
+  text-transform: uppercase;
+  color: var(--basic-black);
+  margin-left: 0;
+  margin-top: 13px
+}
+
+.cart__link {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: 10px
+}
+
+.cart__link::before {
+  content: "";
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background-image: url("../img/cart-icon.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  margin-right: 24.84px
+}
+
+.cart a {
+  color: var(--basic-black);
+  margin-top: 3px
+}
+
+.menu__link:hover,
+.cart__link:hover {
+  color: var(--basic-red2)
+}
+
+.menu__link:active,
+.menu__link:focus,
+.cart__link:active,
+.cart__link:focus {
+  color: var(--basic-black);
+  opacity: .3
+}
+
+.logo__img:hover {
+  opacity: .7
+}
+
+.logo__img:active,
+.logo__img:focus {
+  opacity: .3
+}
+
+.title {
+  background-color: var(--basic-very-light-gray);
+  min-height: 237px;
+  display: flex;
+  align-items: center
+}
+
+.title h1 {
+  text-align: center;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 55px;
+  line-height: 55px;
+  margin: 0;
+  margin-bottom: 32px
+}
+
+.slider-background {
+  background-color: var(--basic-very-dark-grey-2)
+}
+
 .slider {
   background-color: var(--basic-very-light-gray);
   margin-top: 0;
@@ -233,7 +447,7 @@ img {
   grid-template-areas: 'slide';
   position: relative;
   z-index: 1;
-  height: 427px;
+  height: 427px
 }
 
 .slide {
@@ -242,18 +456,18 @@ img {
   margin: 0;
   opacity: 0;
   z-index: -5;
-  transition: all 0.3s;
+  transition: all .3s;
   width: 1157px;
-  height: 427px;
+  height: 427px
 }
 
 .slide.slide--current {
   opacity: 1;
-  z-index: 1;
+  z-index: 1
 }
 
 .slide>figcaption {
-  width: 398px;
+  width: 398px
 }
 
 .slide h3 {
@@ -263,7 +477,7 @@ img {
   font-size: 55px;
   line-height: 54px;
   margin-top: 75px;
-  margin-bottom: 26px;
+  margin-bottom: 26px
 }
 
 .slide p {
@@ -278,14 +492,13 @@ img {
   display: flex;
   align-items: center;
   color: var(--basic-extra-dark);
-  width: 416px;
+  width: 416px
 }
 
 .nerds-slide-img {
   display: block;
-  padding-right: 1px;
+  padding-right: 1px
 }
-
 
 .button {
   min-width: 240px;
@@ -302,22 +515,22 @@ img {
   appearance: none;
   padding: 1rem 2rem;
   box-sizing: border-box;
-  border: none;
+  border: 0;
   display: inline-block;
   text-align: center;
   vertical-align: middle;
-  transition: all 0.4s;
-  cursor: pointer;
+  transition: all .4s;
+  cursor: pointer
 }
 
 .button:hover {
-  background-color: var(--basic-red2);
+  background-color: var(--basic-red2)
 }
 
 .button:focus,
 .button:active {
   background-color: var(--basic-red3);
-  color: var(--basic-gray2);
+  color: var(--basic-gray2)
 }
 
 .visually-hidden {
@@ -330,9 +543,8 @@ img {
   white-space: nowrap;
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
-  overflow: hidden;
+  overflow: hidden
 }
-
 
 .slider-controls {
   display: flex;
@@ -345,10 +557,8 @@ img {
   left: 591px;
   transform: translateX(-50%);
   z-index: 9;
-  padding-left: 17px;
+  padding-left: 17px
 }
-
-
 
 .slider-controls button {
   display: block;
@@ -360,7 +570,7 @@ img {
   position: relative;
   width: 18px;
   height: 18px;
-  padding: 0;
+  padding: 0
 }
 
 .current button {
@@ -372,7 +582,7 @@ img {
   top: 436px;
   width: 8px;
   height: 8px;
-  position: relative;
+  position: relative
 }
 
 .current::after {
@@ -382,16 +592,13 @@ img {
   width: 8px;
   height: 8px;
   border: 2px solid var(--basic-light-gray);
-  border-radius: 50%;
+  border-radius: 50%
 }
 
-/* Конец слайдера */
-
-/*Блок с услугами*/
 .services {
   background-color: var(--basic-white);
   min-width: 1157px;
-  margin-top: 80px;
+  margin-top: 80px
 }
 
 .services-list {
@@ -400,23 +607,23 @@ img {
   margin: 0;
   padding: 0;
   list-style: none;
-  justify-content: flex-start;
+  justify-content: flex-start
 }
 
 .services-item {
   width: 300px;
-  margin-bottom: 36px;
+  margin-bottom: 36px
 }
 
 .services-item:not(:nth-child(3n-2)) {
-  margin-left: 100px;
+  margin-left: 100px
 }
 
 .services_h {
   font-size: 24px;
   line-height: 30px;
   padding-left: 1px;
-  padding-top: 1px;
+  padding-top: 1px
 }
 
 .services-img {
@@ -425,7 +632,7 @@ img {
   font-size: 24px;
   line-height: 30px;
   text-transform: uppercase;
-  color: var(--basic-black);
+  color: var(--basic-black)
 }
 
 .services_p {
@@ -434,78 +641,74 @@ img {
   font-size: 16px;
   line-height: 24px;
   color: var(--basic-extra-dark);
-  margin-top: -7px;
+  margin-top: -7px
 }
-
 
 .button-services {
   min-width: initial;
-  margin-top: 16px;
+  margin-top: 16px
 }
 
 .services-button1 {
   width: 160px;
   height: 50px;
   color: var(--basic-white);
-  appearance: none;
+  appearance: none
 }
 
 .services-button1:link {
-  background: var(--basic-green);
+  background: var(--basic-green)
 }
 
 .services-button1:hover {
-  background: var(--basic-red2);
+  background: var(--basic-red2)
 }
 
 .services-button1:focus,
 .services-button1:active {
-  background: var(--basic-red3);
+  background: var(--basic-red3)
 }
 
 .services-button2 {
   background: var(--basic-green);
   width: 160px;
   height: 50px;
-  appearance: none;
+  appearance: none
 }
 
 .services-button2:link {
-  background: var(--basic-green);
+  background: var(--basic-green)
 }
 
 .services-button2:hover {
-  background: var(--basic-green2);
+  background: var(--basic-green2)
 }
 
 .services-button2:focus,
 .services-button2:active {
-  background: var(--basic-green3);
+  background: var(--basic-green3)
 }
 
 .services-button3 {
   background: var(--basic-yellow);
   width: 160px;
   height: 50px;
-  appearance: none;
+  appearance: none
 }
 
 .services-button3:link {
-  background: var(--basic-yellow);
+  background: var(--basic-yellow)
 }
 
 .services-button3:hover {
-  background: var(--basic-yellow2);
+  background: var(--basic-yellow2)
 }
 
 .services-button3:focus,
 .services-button3:active {
-  background: var(--basic-yellow3);
+  background: var(--basic-yellow3)
 }
 
-/*Конец блока с услугами*/
-
-/*Блок с преимуществами*/
 .about-company-section {
   display: flex;
   justify-content: space-between;
@@ -515,7 +718,7 @@ img {
   line-height: 45px;
   color: var(--basic-black);
   position: relative;
-  margin-top: 80px;
+  margin-top: 80px
 }
 
 .about-company-section::before {
@@ -524,7 +727,7 @@ img {
   width: 1158px;
   height: 2px;
   background-color: var(--basic-very-light-gray);
-  top: -37px;
+  top: -37px
 }
 
 .about-company-section::after {
@@ -533,7 +736,7 @@ img {
   width: 1158px;
   height: 2px;
   background-color: var(--basic-very-light-gray);
-  bottom: -79px;
+  bottom: -79px
 }
 
 .slogan {
@@ -542,12 +745,12 @@ img {
   font-weight: 500;
   font-size: 45px;
   line-height: 45px;
-  padding-left: 1px;
+  padding-left: 1px
 }
 
 .about-company {
   width: 651px;
-  height: 413px;
+  height: 413px
 }
 
 .about-company_p {
@@ -555,9 +758,8 @@ img {
   font-size: 16px;
   line-height: 21px;
   color: var(--basic-extra-dark);
-  padding-bottom: 25px;
+  padding-bottom: 25px
 }
-
 
 .about-company-span {
   font-style: normal;
@@ -565,7 +767,7 @@ img {
   vertical-align: super;
   font-size: 26px;
   line-height: 40px;
-  color: var(--basic-black);
+  color: var(--basic-black)
 }
 
 .benefits {
@@ -573,7 +775,7 @@ img {
   font-size: 16px;
   line-height: 24px;
   text-transform: uppercase;
-  color: var(--basic-extra-dark);
+  color: var(--basic-extra-dark)
 }
 
 .benefits-list {
@@ -581,13 +783,13 @@ img {
   font-size: 16px;
   line-height: 24px;
   color: var(--basic-extra-dark);
-  list-style: none;
+  list-style: none
 }
 
 .benefits-item {
   position: relative;
   margin-top: 24px;
-  margin-left: -5px;
+  margin-left: -5px
 }
 
 .benefits-item::before {
@@ -598,7 +800,7 @@ img {
   width: 25px;
   height: 2px;
   transform: translateY(-50%);
-  background-color: var(--basic-color12);
+  background-color: var(--basic-color12)
 }
 
 .working-conditions-header {
@@ -610,16 +812,15 @@ img {
   text-align: center;
   text-transform: uppercase;
   padding-top: 21px;
-  padding-left: 20px;
+  padding-left: 20px
 }
-
 
 .about-company a {
   font-weight: bold;
   font-size: 16px;
   line-height: 24px;
   text-transform: uppercase;
-  color: var(--basic-black);
+  color: var(--basic-black)
 }
 
 .about-company-item {
@@ -628,7 +829,7 @@ img {
   line-height: 64px;
   color: var(--basic-black);
   width: 78px;
-  height: 75px;
+  height: 75px
 }
 
 .about-company-definition {
@@ -638,7 +839,7 @@ img {
   color: var(--basic-extra-dark);
   width: 107px;
   height: 37px;
-  margin: 0;
+  margin: 0
 }
 
 .about-company-list {
@@ -647,24 +848,19 @@ img {
   flex-wrap: wrap;
   height: 112px;
   margin-top: 31px;
-  margin-left: 2px;
+  margin-left: 2px
 }
 
 .working-conditions {
-  width: 360px;
+  width: 360px
 }
 
 .nerds-illustration {
   width: 360px;
   height: 208px;
   margin-left: 2px;
-  margin-top: 2px;
+  margin-top: 2px
 }
-
-/*Конец блока с преимуществами*/
-
-/* Блок с клиентами компании*/
-
 
 .clients-section {
   display: flex;
@@ -674,20 +870,20 @@ img {
   background-position: bottom, 0 0;
   background-repeat: no-repeat;
   margin-bottom: 80px;
-  padding: 0 14px;
+  padding: 0 14px
 }
 
 .img-clients {
-  opacity: 0.2;
+  opacity: .2
 }
 
 .img-clients:hover {
-  opacity: 1;
+  opacity: 1
 }
 
 .img-clients:active,
 .img-clients:focus {
-  opacity: 0.1;
+  opacity: .1
 }
 
 .clients {
@@ -695,20 +891,20 @@ img {
   height: 180px;
   position: relative;
   display: grid;
-  place-items: center;
+  place-items: center
 }
 
 .img-clients-academy {
-  margin-left: -24px;
+  margin-left: -24px
 }
 
 .img-clients-mishka {
-  margin-right: -22px;
+  margin-right: -22px
 }
 
 .clients:nth-of-type(4n-3),
 .clients:last-of-type {
-  width: 278px;
+  width: 278px
 }
 
 .clients:not(:nth-of-type(4n))::after {
@@ -720,21 +916,17 @@ img {
   transform: translateY(-50%);
   width: 2px;
   height: 52px;
-  background-color: var(--basic-very-light-gray);
+  background-color: var(--basic-very-light-gray)
 }
 
-
-/* Конец блока с клиентами компании*/
-
-/* Блок с контактами*/
 .contacts {
-  margin: 0 auto;
+  margin: 0 auto
 }
 
 .contacts-figure {
   display: grid;
   grid-template-areas: 'contacts';
-  margin: 0;
+  margin: 0
 }
 
 .contacts-figcaption {
@@ -746,18 +938,18 @@ img {
   padding: 34px 50px;
   margin-left: calc((100% - 1160px) / 2);
   margin-top: auto;
-  margin-bottom: auto;
+  margin-bottom: auto
 }
 
 .map {
-  grid-area: contacts;
+  grid-area: contacts
 }
 
 .map-img {
   width: 100%;
   display: block;
   object-fit: cover;
-  height: 416px;
+  height: 416px
 }
 
 .contacts h3 {
@@ -765,7 +957,7 @@ img {
   font-size: 18px;
   line-height: 30px;
   text-transform: uppercase;
-  color: var(--basic-black);
+  color: var(--basic-black)
 }
 
 .address {
@@ -773,7 +965,7 @@ img {
   font-size: 16px;
   line-height: 18px;
   align-items: center;
-  color: var(--basic-very-dark-grey-2);
+  color: var(--basic-very-dark-grey-2)
 }
 
 .contacts-phone {
@@ -781,7 +973,7 @@ img {
   font-size: 16px;
   line-height: 18px;
   align-items: center;
-  color: var(--basic-very-dark-grey-2);
+  color: var(--basic-very-dark-grey-2)
 }
 
 .button-write {
@@ -789,15 +981,12 @@ img {
   min-width: 219px;
   min-height: 50px;
   grid-area: contacts;
-  margin-top: 37px;
+  margin-top: 37px
 }
 
-/* Конец блока с контактами */
-
-/* Main-footer */
 .main-footer {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: wrap
 }
 
 .footer-social {
@@ -805,7 +994,7 @@ img {
   min-width: 1157px;
   height: 81px;
   justify-content: space-between;
-  margin: 70px auto;
+  margin: 70px auto
 }
 
 .footer-social h3 {
@@ -816,8 +1005,8 @@ img {
   color: var(--basic-black);
   margin-top: 7px;
   font-kerning: none;
-  letter-spacing: 0.27px;
-  margin-bottom: 0;
+  letter-spacing: .27px;
+  margin-bottom: 0
 }
 
 .footer-social p {
@@ -826,7 +1015,7 @@ img {
   font-size: 16px;
   line-height: 22px;
   color: var(--basic-very-dark-gray);
-  margin-top: 9px;
+  margin-top: 9px
 }
 
 .social-list {
@@ -835,11 +1024,11 @@ img {
   justify-content: start;
   padding-left: 0;
   min-width: 400px;
-  margin: 0;
+  margin: 0
 }
 
 .social-list>li+li {
-  margin-left: 9px;
+  margin-left: 9px
 }
 
 .social-button {
@@ -847,38 +1036,37 @@ img {
   width: 81px;
   height: 81px;
   background-color: var(--basic-very-light-gray-2);
-  border-radius: 50%;
+  border-radius: 50%
 }
 
 .social-button:hover {
-  background-color: var(--basic-red2);
+  background-color: var(--basic-red2)
 }
 
 .social-button:active,
 .social-button:focus {
   background-color: var(--basic-red3);
-  opacity: 0.3;
+  opacity: .3
 }
 
 .social-button--vk {
   background-image: url("../img/vk-icon.svg");
   background-position: center;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat
 }
 
 .social-button--fb {
   background-image: url("../img/fb-icon.svg");
   background-position: center;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat
 }
 
 .social-button--insta {
   background-image: url("../img/insta-icon.svg");
   background-position: center;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat
 }
 
-/*Popup*/
 .popup {
   display: none;
   flex-wrap: wrap;
@@ -886,14 +1074,14 @@ img {
   height: max-content;
   background-color: var(--basic-white);
   padding: 100px 100px;
-  box-shadow: 0px 20px 40px var(--basic-color11);
+  box-shadow: 0 20px 40px var(--basic-color11);
   right: 0;
   margin: auto;
-  position: relative;
+  position: relative
 }
 
 .popup-item p {
-  width: 50%;
+  width: 50%
 }
 
 .popup.active {
@@ -902,7 +1090,7 @@ img {
   left: 50%;
   transform: translate(-50%, -50%);
   position: fixed;
-  z-index: 999;
+  z-index: 999
 }
 
 .popup-close {
@@ -913,34 +1101,34 @@ img {
   height: 21px;
   border: 0;
   cursor: pointer;
-  opacity: 0.3;
+  opacity: .3;
   background-image: url("../img/close-cross.svg");
   background-repeat: no-repeat;
-  background-color: var(--basic-white);
+  background-color: var(--basic-white)
 }
 
 .popup-close:hover {
-  opacity: 1;
+  opacity: 1
 }
 
 .popup-close:active,
 .popup-close:focus {
-  opacity: 0.1;
+  opacity: .1
 }
 
 .popup-name {
   width: 360px;
   height: 50px;
-  border: 2px solid var(--basic-color10);
+  border: 2px solid var(--basic-color10)
 }
 
 .popup-name:hover {
-  border: 2px solid var(--basic-color9);
+  border: 2px solid var(--basic-color9)
 }
 
 .popup-name:active,
 .popup-name:focus {
-  border: 2px solid var(--basic-color7);
+  border: 2px solid var(--basic-color7)
 }
 
 .popup-h {
@@ -951,44 +1139,41 @@ img {
   font-weight: bold;
   font-size: 45px;
   line-height: 53px;
-  color: var(--basic-black);
+  color: var(--basic-black)
 }
 
 .popup-item-p {
-  width: 50%;
+  width: 50%
 }
 
 .popup-letter {
   width: 760px;
   height: 118px;
-  border: 2px solid var(--basic-color10);
+  border: 2px solid var(--basic-color10)
 }
 
 .popup-letter:hover {
-  border: 2px solid var(--basic-color9);
+  border: 2px solid var(--basic-color9)
 }
 
 .popup-letter:active,
 .popup-letter:hover {
-  border: 2px solid var(--basic-color7);
+  border: 2px solid var(--basic-color7)
 }
 
 .popup-button {
   width: 259px;
-  height: 50px;
+  height: 50px
 }
 
-/* Inner header */
 .inner-page .main-header {
-  background-color: var(--basic-very-light-gray);
+  background-color: var(--basic-very-light-gray)
 }
 
 .inner-page {
   color: var(--basic-extra-dark);
-  background-color: var(--basic-white);
+  background-color: var(--basic-white)
 }
-
-/* Магазин */
 
 .header-shop {
   width: 727px;
@@ -998,7 +1183,7 @@ img {
   font-weight: 500;
   font-size: 55px;
   line-height: 55px;
-  color: var(--basic-black);
+  color: var(--basic-black)
 }
 
 .page-catalog {
@@ -1006,11 +1191,11 @@ img {
   display: grid;
   grid-template-columns: 1fr 758px;
   grid-template-rows: auto 1fr;
-  margin: 0 auto;
+  margin: 0 auto
 }
 
 .sorting {
-  display: flex;
+  display: flex
 }
 
 .shop {
@@ -1019,7 +1204,7 @@ img {
   gap: 34px 40px;
   grid-column: 2/-1;
   grid-row: 2/3;
-  margin-bottom: 60px;
+  margin-bottom: 60px
 }
 
 .product {
@@ -1027,14 +1212,14 @@ img {
   overflow: hidden;
   border-radius: 5px;
   background: var(--basic-color8);
-  border: 1px solid var(--basic-color7);
+  border: 1px solid var(--basic-color7)
 }
 
 .product-link {
   padding-top: 40px;
   position: relative;
   display: block;
-  transition: all 0.4s;
+  transition: all .4s
 }
 
 .product-link::before,
@@ -1046,23 +1231,22 @@ img {
   top: 13px;
   left: 16px;
   background-color: var(--basic-white);
-  border-radius: 50%;
+  border-radius: 50%
 }
 
 .product-link::after {
   left: 39px;
-  box-shadow: 22px 0 0 0 var(--basic-white);
+  box-shadow: 22px 0 0 0 var(--basic-white)
 }
 
 .product:hover {
-  box-shadow: 0px 6px 15px var(--basic-color6);
+  box-shadow: 0 6px 15px var(--basic-color6);
   background-color: var(--basic-color5);
-  transition: all 0.4s;
+  transition: all .4s
 }
 
 .product:hover>.product-link {
-  background-image: linear-gradient(var(--basic-color5) 40px,
-      var(--basic-color15) 40px);
+  background-image: linear-gradient(var(--basic-color5) 40px, var(--basic-color15) 40px)
 }
 
 .product-details {
@@ -1076,30 +1260,30 @@ img {
   text-align: center;
   z-index: 1;
   transform: translateY(101%);
-  transition: all 0.4s;
+  transition: all .4s
 }
 
 .product:hover .product-details {
   transform: translateY(0);
-  transition: all 0.4s;
+  transition: all .4s
 }
 
 .filters {
   width: 260px;
   grid-row: 1/3;
-  position: relative;
+  position: relative
 }
 
 .filters-list {
   list-style: none;
   margin-bottom: 27px;
-  padding: 0;
+  padding: 0
 }
 
 .filters-list>li {
   position: relative;
   margin-bottom: 16px;
-  padding-left: 36px;
+  padding-left: 36px
 }
 
 .input-checkbox+label::before {
@@ -1110,15 +1294,15 @@ img {
   background-image: url("../img/checkbox-off.png");
   background-repeat: no-repeat;
   left: 0;
-  opacity: 0.4;
+  opacity: .4
 }
 
 .input-checkbox:checked+label::before {
-  background-image: url("../img/checkbox-on.png");
+  background-image: url("../img/checkbox-on.png")
 }
 
 .radio {
-  position: relative;
+  position: relative
 }
 
 .filter-input-radio+label::before {
@@ -1128,9 +1312,8 @@ img {
   height: 25px;
   background-image: url("../img/radio-off.png");
   background-repeat: no-repeat;
-  opacity: 0.4;
-  left: 0px;
-
+  opacity: .4;
+  left: 0
 }
 
 .filter-input-radio:checked+label::after {
@@ -1138,10 +1321,10 @@ img {
   position: absolute;
   width: 30px;
   height: 30px;
-  left: 0px;
+  left: 0;
   background-image: url("../img/radio-on.png");
   background-repeat: no-repeat;
-  opacity: 0.4;
+  opacity: .4
 }
 
 .input-checkbox:focus+label::after,
@@ -1152,31 +1335,29 @@ img {
 .input-checkbox+label:hover:after,
 .filter-input-radio+label:hover:after,
 .filter-input-radio+label:hover:before {
-  opacity: 1;
+  opacity: 1
 }
 
-
-
 .filters-current {
-  color: var(--basic-dark);
+  color: var(--basic-dark)
 }
 
 .filter-item {
   margin: 0;
   padding: 0;
-  border: none;
+  border: 0
 }
 
 .range-filter {
   width: 260px;
-  margin-top: 52px;
+  margin-top: 52px
 }
 
 .filter-item legend {
   font-size: 18px;
   line-height: 24px;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 700
 }
 
 .range-controls {
@@ -1188,18 +1369,18 @@ img {
   padding-right: 20px;
   padding-left: 20px;
   background-color: var(--basic-color15);
-  border-radius: 5px;
+  border-radius: 5px
 }
 
 .range-controls .scale {
   height: 2px;
-  background: var(--basic-color3);
+  background: var(--basic-color3)
 }
 
 .range-controls .bar {
   width: 70%;
   height: 2px;
-  background: var(--basic-color2);
+  background: var(--basic-color2)
 }
 
 .range-controls .toggle {
@@ -1213,27 +1394,26 @@ img {
   background-color: var(--basic-gray);
   border-radius: 50%;
   box-shadow: 0 2px 1px 0 var(--basic-color1);
-  cursor: pointer;
+  cursor: pointer
 }
 
 .range-controls .toggle-min {
-  left: 18px;
+  left: 18px
 }
 
 .range-controls .toggle-max {
-  left: 160px;
+  left: 160px
 }
 
 .price-controls {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between
 }
-
 
 .price-controls label {
   text-transform: uppercase;
   font-family: Roboto, arial, sans-serif;
-  font-size: 16px;
+  font-size: 16px
 }
 
 .price-controls input {
@@ -1243,11 +1423,11 @@ img {
   margin-left: 8px;
   text-align: center;
   color: var(--basic-very-dark);
-  border: none;
+  border: 0;
   border-radius: 5px;
   background: var(--basic-color15);
   font-family: inherit;
-  font-size: inherit;
+  font-size: inherit
 }
 
 .sorting-header {
@@ -1258,7 +1438,7 @@ img {
   text-transform: uppercase;
   color: var(--basic-black);
   margin-top: 55px;
-  margin-bottom: 43px;
+  margin-bottom: 43px
 }
 
 .sorting-list {
@@ -1274,53 +1454,52 @@ img {
   display: flex;
   margin-left: auto;
   margin-top: 62px;
-  margin-bottom: 53px;
+  margin-bottom: 53px
 }
 
 .sorting-list li,
 .sorting-list a {
-  color: var(--basic-colo14);
-
+  color: var(--basic-colo14)
 }
 
 .sorting-list li+li {
-  margin-left: 25px;
+  margin-left: 25px
 }
 
 .sorting-list li:nth-last-child(1) {
-  margin-left: 18px;
+  margin-left: 18px
 }
 
 .sorting-list li:nth-last-child(2) {
-  margin-left: auto;
+  margin-left: auto
 }
 
 .sorting-list a:hover,
 .sorting-list a:focus {
-  text-decoration: underline;
+  text-decoration: underline
 }
 
 .filters-header {
   text-transform: uppercase;
   padding-top: 57px;
-  margin: 0;
+  margin: 0
 }
 
 .filters-header.--gap-smaller {
-  padding-top: 21px;
+  padding-top: 21px
 }
 
 .filters-sorting a {
-  text-decoration: none;
+  text-decoration: none
 }
 
 .sorting-link {
-  opacity: 0.3;
-  position: relative;
+  opacity: .3;
+  position: relative
 }
 
 .sorting-link--active {
-  opacity: 1;
+  opacity: 1
 }
 
 .button-sorting {
@@ -1330,36 +1509,34 @@ img {
   background: var(--basic-very-light-gray);
   border-radius: 3px;
   color: var(--basic-black);
-  text-transform: uppercase;
+  text-transform: uppercase
 }
 
 .button-sorting:hover {
-  background: var(--basic-color17);
+  background: var(--basic-color17)
 }
 
 .button-sorting:active,
 .button-sorting:focus {
   background: var(--basic-color18);
-  color: var(--basic-color19);
+  color: var(--basic-color19)
 }
-
-
 
 .header-demonstration {
   font-weight: bold;
   font-size: 18px;
   line-height: 30px;
   text-transform: uppercase;
-  color: var(--basic-black);
+  color: var(--basic-black)
 }
 
 .header-demonstration:hover {
-  color: var(--basic-red);
+  color: var(--basic-red)
 }
 
 .header-demonstration:active,
 .header-demonstration:focus {
-  opacity: 0.3;
+  opacity: .3
 }
 
 .text-demonstration {
@@ -1368,7 +1545,7 @@ img {
   font-weight: normal;
   font-size: 16px;
   line-height: 18px;
-  color: var(--basic-very-dark-grey-2);
+  color: var(--basic-very-dark-grey-2)
 }
 
 .pagination {
@@ -1377,45 +1554,43 @@ img {
   margin: 0;
   margin-top: 22px;
   grid-column: 1/-1;
-  padding: 0;
+  padding: 0
 }
-
-
 
 .button-pagination {
   min-width: 50px;
   min-height: 50px;
   background: var(--basic-very-light-gray);
   border-radius: 3px;
-  border: none;
+  border: 0;
   box-sizing: border-box;
   padding: .6rem;
   display: inline-block;
   text-align: center;
   line-height: 30px;
   vertical-align: middle;
-  color: var(--basic-black);
+  color: var(--basic-black)
 }
 
 .button-pagination.current {
   background: var(--basic-white);
   border: 3px solid var(--basic-color13);
   box-sizing: border-box;
-  border-radius: 3px;
+  border-radius: 3px
 }
 
 .pagination>li+li {
-  margin-left: 11px;
+  margin-left: 11px
 }
 
 .pagination-current {
   background-color: var(--basic-white);
-  box-shadow: inset 0 0 0 3px var(--basic-color13);
+  box-shadow: inset 0 0 0 3px var(--basic-color13)
 }
 
 .next {
   width: 260px;
   background: var(--basic-very-light-gray);
   border-radius: 3px;
-  text-transform: uppercase;
+  text-transform: uppercase
 }
