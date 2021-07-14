@@ -1405,6 +1405,18 @@ img {
   left: 160px
 }
 
+input[type="number"] {
+  -moz-appearance: textfield;
+  -webkit-appearance: textfield;
+  appearance: textfield;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  display: none;
+}
+
+
 .price-controls {
   display: flex;
   justify-content: space-between
@@ -1419,7 +1431,7 @@ img {
 .price-controls input {
   width: 80px;
   padding: 10px;
-  padding-right: 0;
+  padding-right: 5px;
   margin-left: 8px;
   text-align: center;
   color: var(--basic-very-dark);
@@ -1427,7 +1439,7 @@ img {
   border-radius: 5px;
   background: var(--basic-color15);
   font-family: inherit;
-  font-size: inherit
+  font-size: inherit;
 }
 
 .sorting-header {
