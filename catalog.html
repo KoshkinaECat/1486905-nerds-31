@@ -5,9 +5,9 @@
   <meta charset="utf-8">
   <title>Нёрдс</title>
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <link href="normalize.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="favicon/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="favicon/180.png">
@@ -56,10 +56,8 @@
         <li><a class="sorting-link sorting-link--active" href="#">По цене</a></li>
         <li><a class="sorting-link" href="#">По типу </a></li>
         <li><a class="sorting-link" href="#">По названию</a></li>
-        <li><a class="sorting-link" href="#"><img class="icon-down-dir" src="img/down.svg" width="11" height="10"
-              alt="по убыванию"></a></li>
-        <li><a class="sorting-link" href="#"><img class="icon-up-dir" src="img/up.svg" width="11" height="10"
-              alt="по возрастанию"></a></li>
+        <li><a class="sorting-link icon-down-dir" href="#"></a></li>
+        <li><a class="sorting-link icon-up-dir" href="#"></a></li>
       </ul>
     </section>
     <section class="filters">
@@ -72,62 +70,61 @@
               <div class="scale">
                 <div class="bar"></div>
               </div>
-              <div class="toggle toggle-min" tabindex="0" style="
-              left: 5%"></div>
+              <div class="toggle toggle-min"  tabindex="0" style="left: 5%"></div>
               <div class="toggle toggle-max" tabindex="0" style="
               left: 60%"></div>
             </div>
             <div class="price-controls">
               <label class="min-price">
-                от <input type="text" name="min-price" value="0">
+                от <input type="text" aria-label="Выбрать цену от" name="min-price" value="0">
               </label>
               <label class="max-price">
-                до <input type="text" name="max-price" value="150 000">
+                до <input type="text" aria-label="Выбрать цену от" name="max-price" value="150 000">
               </label>
             </div>
           </div>
         </fieldset>
-        <h3 class="filters-header">Сетка:</h3>
+        <h3 class="filters-header" aria-label="Выбрать сетку сайта">Сетка:</h3>
         <ul class="filters-list radio">
-          <li>
+          <li class="filters-li">
             <input class="visually-hidden filter-input-radio" type="radio" value="adaptive" name="grid" id="adaptive"
               checked>
             <label for="adaptive">Адаптивная</label>
           </li>
-          <li>
+          <li class="filters-li">
             <input class="visually-hidden filter-input-radio" type="radio" value="fixed" name="grid" id="fixed">
             <label for="fixed">Фиксированная</label>
           </li>
-          <li>
+          <li class="filters-li">
             <input class="visually-hidden filter-input-radio" type="radio" value="rubber" name="grid" id="rubber">
             <label for="rubber">Резиновая</label>
           </li>
         </ul>
 
-        <h3 class="filters-header --gap-smaller">Особенности:</h3>
+        <h3 class="filters-header gap-smaller" aria-label="Выбрать особенности сайта">Особенности:</h3>
         <ul class="filters-list">
-          <li>
+          <li class="filters-li">
             <input class="input-checkbox visually-hidden" type="checkbox" name="slider" id="slider" checked>
             <label for="slider">Слайдер</label>
           </li>
 
-          <li>
+          <li class="filters-li">
             <input class="input-checkbox visually-hidden" type="checkbox" name="block-of-advantages"
               id="block-of-advantages">
             <label for="block-of-advantages">Блок преимуществ</label>
           </li>
 
-          <li>
+          <li class="filters-li">
             <input class="input-checkbox visually-hidden" type="checkbox" name="news" id="news" checked>
             <label for="news">Новости</label>
           </li>
 
-          <li>
+          <li class="filters-li">
             <input class="input-checkbox visually-hidden" type="checkbox" name="galery" id="galery">
             <label for="galery">Галерея</label>
           </li>
 
-          <li>
+          <li class="filters-li">
             <input class="input-checkbox visually-hidden" type="checkbox" name="basket" id="basket">
             <label for="basket">Корзина</label>
           </li>
@@ -143,8 +140,9 @@
           <a href="blank.html">
             <h3 class="header-demonstration">Sedona</h3>
           </a>
-          <p class="text-demonstration"> Информационный сайт для туристов</p>
-          <a href="blank.html" class="button">9 900 &#8381;</a>
+          <p class="text-demonstration"> Информационный сайт<br>
+            для туристов</p>
+          <a href="blank.html" aria-label="Купить сайт" class="button button-product">9 900 &#8381;</a>
         </div>
         <a href="blank.html" class="product-link">
 
@@ -160,7 +158,7 @@
             <h3 class="header-demonstration">Pink App</h3>
           </a>
           <p class="text-demonstration">Продуктовый лендинг приложения для iOS и Anroid</p>
-          <a href="blank.html" class="button">9 900 &#8381;</a>
+          <a href="blank.html" aria-label="Купить сайт"  class="button button-product">9 900 &#8381;</a>
         </div>
         <a href="blank.html" class="product-link">
           <img src="img/img-pink.jpg" width="358" height="578" alt="Pink">
@@ -174,7 +172,7 @@
             <h3 class="header-demonstration">Barbershop</h3>
           </a>
           <p class="text-demonstration">Сайт салона красоты. Для мужчин, да.</p>
-          <a href="blank.html" class="button">9 900 &#8381;</a>
+          <a href="blank.html" aria-label="Купить сайт"  class="button button-product">9 900 &#8381;</a>
         </div>
         <a href="blank.html" class="product-link">
           <img src="img/img-barbershop.jpg" width="358" height="578" alt="Barbershop">
@@ -188,7 +186,7 @@
             <h3 class="header-demonstration">Mishka</h3>
           </a>
           <p class="text-demonstration">Интернет-магазин вязаных игрушек</p>
-          <a href="blank.html" class="button">9 900 &#8381;</a>
+          <a href="blank.html" aria-label="Купить сайт" class="button button-product">9 900 &#8381;</a>
         </div>
         <a href="blank.html" class="product-link">
           <img src="img/img-mishka.jpg" width="358" height="578" alt="Mishka">
@@ -202,7 +200,7 @@
             <h3 class="header-demonstration">Aplus</h3>
           </a>
           <p class="text-demonstration">Лендинг курсов повышения квалификации</p>
-          <a href="blank.html" class="button" >9 900 &#8381;</a>
+          <a href="blank.html" aria-label="Купить сайт" class="button button-product" >9 900 &#8381;</a>
         </div>
         <a href="blank.html" class="product-link">
           <img src="img/img-aplus.jpg" width="358" height="578" alt="Aplus">
@@ -213,28 +211,28 @@
       <article class="product">
         <div class="product-details">
           <a href="blank.html">
-            <h3 class="header-demonstration">Kvast</h3>
+            <h3 class="header-demonstration">Кваст</h3>
           </a>
           <p class="text-demonstration">Промо-сайт производителя крафтового кваса</p>
-          <a href="blank.html" class="button">9 900 &#8381;</a>
+          <a href="blank.html" aria-label="Купить сайт" class="button button-product">9 900 &#8381;</a>
         </div>
         <a href="blank.html" class="product-link">
-          <img src="img/img-kvast.jpg" width="358" height="578" alt="Kvast">
+          <img src="img/img-kvast.jpg" width="358" height="578" alt="Кваст">
         </a>
       </article>
 
       <ul class="pagination">
         <li>
-          <a href="blank.html" class="button-pagination pagination-current">1</a>
+          <a href="blank.html" aria-label="Первая страница с сайтами" class="button-pagination pagination-current">1</a>
         </li>
         <li>
-          <a href="blank.html" class="button-pagination">2</a>
+          <a href="blank.html" aria-label="Вторая страница с сайтами" class="button-pagination">2</a>
         </li>
         <li>
-          <a href="blank.html" class="button-pagination">3</a>
+          <a href="blank.html" aria-label="Третья страница с сайтами" class="button-pagination">3</a>
         </li>
         <li>
-          <a href="blank.html" class="button-pagination next">Следующая</a>
+          <a href="blank.html" aria-label="Следующая страница с сайтами" class="button-pagination next">Следующая</a>
         </li>
       </ul>
     </section>
@@ -245,28 +243,29 @@
       <figure class="contacts-figure">
         <figcaption class="contacts-figcaption">
           <h3>NЁRDS DESIGN STUDIO</h3>
-          <p class="address">наб. Реки Карповки, 5 лит П, Санкт-Петербург</p>
-          <a class="contacts-phone" href="tel:+78005558628">+7 800 555-86-28</a>
+          <p class="address">наб. Реки Карповки,<br>
+            5 лит П, Санкт-Петербург</p>
+          <a class="contacts-phone" aria-label="Позвоните нам по телефону" href="tel:+78005558628">+7 800 555-86-28</a>
           <a href="blank.html" class="button button-write">НАПИШИТЕ НАМ</a>
         </figcaption>
-        <a class="map">
-          <img class="map-img" src="img/map.png" width="1440" height="416" alt="Контакты">
-        </a>
+      <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1996.8178647588418!2d30.31519231582784!3d59.9683446666643!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1626436543969!5m2!1sru!2sru"
+        width="1440" height="416" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+         <img class="map-img visually-hidden" src="img/map.png" width="1440" height="416" alt="Контакты">
       </figure>
     </section>
     <section class="footer-social container">
 
       <ul class="social-list">
         <li>
-          <a class="social-button social-button--vk" href="blank.html">
+          <a class="social-button social-button--vk" href="blank.html" aria-label="Мы вконтакте" >
           </a>
         </li>
         <li>
-          <a class="social-button social-button--fb" href="blank.html">
+          <a class="social-button social-button--fb" href="blank.html" aria-label="Мы на фейсбуке" >
           </a>
         </li>
         <li>
-          <a class="social-button social-button--insta" href="blank.html">
+          <a class="social-button social-button--insta" href="blank.html" aria-label="Мы в инстаграме" >
           </a>
         </li>
       </ul>
@@ -277,5 +276,4 @@
     </section>
   </footer>
 </body>
-
 </html>
