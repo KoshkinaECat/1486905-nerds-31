@@ -64,7 +64,7 @@
   background-color: var(--basic-white);
   font-style: normal;
   min-height: 100%;
-  min-width: 1440px;
+  min-width: 1183px;
 }
 
 .container {
@@ -731,7 +731,10 @@ img {
   display: grid;
   grid-template-areas: 'contacts';
   margin: 0;
-
+  background-color: var(--basic-green4);
+  background-image: url("../img/map.png");
+  background-repeat: no-repeat;
+  min-height: 416px;
 }
 
 .contacts-figcaption {
@@ -748,8 +751,7 @@ img {
 
 .map {
   grid-area: contacts;
-  min-width: 1182px;
-  background-color: var(--basic-green4);
+  max-width: 100%;
 }
 
 .map-img {
